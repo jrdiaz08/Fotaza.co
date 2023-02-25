@@ -7,20 +7,25 @@
 </head>
 <body>
     <model-viewer 
+    alt="Prueba Apolo"
     src="https://jrdiaz08.github.io/Virtualverso.co/atlas.glb" 
     ios-src="https://jrdiaz08.github.io/Virtualverso.co/atlas.usdz"
-    ar ar-modes="webxr scene-viewer quick-look" 
-    camera-controls poster="https://jrdiaz08.github.io/Virtualverso.co/poster.webp" 
-    shadow-intensity="1" style="display: block;margin-left: auto;margin-right: auto ; height: 800px;width: 800px;;">
+    ar 
+    camera-controls
+    poster="https://jrdiaz08.github.io/Virtualverso.co/poster.webp" 
+    touch-action="pan-y"
+    shadow-intensity="1" 
+    style="display: block;margin-left: auto;margin-right: auto ; height: 800px;width: 800px;;">
         <div class="progress-bar hide" slot="progress-bar">
             <div class="update-bar"></div>
         </div>
-        <button slot="ar-button" id="ar-button">
-            View in your space
-        </button>
         <div id="ar-prompt">
             <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
         </div>
+        <button slot="ar-button" id="ar-button">
+            Experiencia Aumentada
+        </button>
+        
     </model-viewer>
     
 </body>
