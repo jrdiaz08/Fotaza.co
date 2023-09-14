@@ -17,7 +17,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
 }
 
 .video{
-  position:absolute;
+  position:relative;
   top: 40px;
   left : 40px;
   z-index: 1;
