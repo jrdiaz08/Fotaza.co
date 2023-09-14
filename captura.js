@@ -1,4 +1,4 @@
-cont video = document.getElementById('video');
+cont video = document.getElementById("video");
   function startup() {
   navigator.mediaDevices.getUserMedia({
     audio: false,
