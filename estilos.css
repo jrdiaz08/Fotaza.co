@@ -16,7 +16,16 @@ html, body { /*afecta a todo el cuerpo del documento*/
       
 }
 
+.video{
+  position:absolute;
+  top: 40px;
+  left : 40px;
+  z-index: 1;
+}
+
 .vortice{ /*afecta a la seccion marca*/
+    position:absolute;
+    z-index: -1;
     width: 10%; /*El ancho de la imagen cambia segun el ancho de la pag*/
     max-width: 100px;
     min-width: 50px;
