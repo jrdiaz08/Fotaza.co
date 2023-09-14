@@ -5,6 +5,7 @@
     box-sizing: border-box; /*borde de los bloques incluidos margin y padding*/
     text-align: center; /*Se centra el contenido*/
     overflow: hidden; /*limita el contenido al tamaño de la pantalla*/
+    display: flex;
 }
 @font-face{ /*carga una fuente personalizada desde un archivo*/
     font-family: "fuente"; /*se declara el nombre de la fuente*/
@@ -16,24 +17,6 @@ html, body { /*afecta a todo el cuerpo del documento*/
       
 }
 
-
-.seccion{
-    width: 100%; /*El ancho de la imagen cambia segun el ancho de la pag*/
-    height: 31%;
-    margin: auto; /*crea un margen suficiente para centrar el contenido*/ 
-   
-}
-.titulo{ /*afecta a la seccion marca*/
-    width: 40%; /*El ancho de la imagen cambia segun el ancho de la pag*/
-    max-width: 400px;  
-    padding-top: 2%; /*crea un margen interior*/
-}
-.Logo{ /*afecta a la seccion marca*/
-    width: 70%; /*El ancho de la imagen cambia segun el ancho de la pag*/
-    max-width: 600px;
-    padding-top: 2%; /*crea un margen interior*/
-
-}
 .vortice{ /*afecta a la seccion marca*/
     width: 10%; /*El ancho de la imagen cambia segun el ancho de la pag*/
     max-width: 100px;
