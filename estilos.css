@@ -1,7 +1,6 @@
 * { /*afecta a todo el documento*/
     margin: 0px ; /*distancia de margenes exteriores*/
     padding: 0px; /*distancia de margenes interiores*/
-    background-color: rgb(214, 214, 214); /*fondo transparente*/
     box-sizing: border-box; /*borde de los bloques incluidos margin y padding*/
     text-align: center; /*Se centra el contenido*/
     overflow: hidden; /*limita el contenido al tamaño de la pantalla*/
@@ -19,13 +18,13 @@ html, body { /*afecta a todo el cuerpo del documento*/
   position:absolute; top:0; left:0;
   top: 0px;
   left : 0px;
-  z-index: 2;
+  z-index: 1;
 }
 
 .vortice{
     position:absolute;
     top:50; left:50;
-    z-index: 1;
+    z-index: 2;
     width: 10%; /*El ancho de la imagen cambia segun el ancho de la pag*/
     max-width: 100px;
     min-width: 50px;
