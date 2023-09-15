@@ -12,20 +12,20 @@
 }
 html, body { /*afecta a todo el cuerpo del documento*/
     font-family: "fuente"; /*estilo de letra*/  
-    height: 100% ; /*se toma como alto de la pag todo el contenido*/
-      
+    height: 100% ; /*se toma como alto de la pag todo el contenido*/      
 }
 
 .video{
-  position:relative;
-  top: 40px;
-  left : 40px;
-  z-index: 1;
+  position:absolute; top:0; left:0;
+  top: 0px;
+  left : 0px;
+  z-index: 2;
 }
 
-.vortice{ /*afecta a la seccion marca*/
-    position:absolute; top:0; left:0;
-    z-index: -1;
+.vortice{
+    position:absolute;
+    top:50; left:50;
+    z-index: 1;
     width: 10%; /*El ancho de la imagen cambia segun el ancho de la pag*/
     max-width: 100px;
     min-width: 50px;
