@@ -1,7 +1,6 @@
 * { /*afecta a todo el documento*/
     box-sizing: border-box; /*borde de los bloques incluidos margin y padding*/
-    text-align: center; /*Se centra el contenido*/
-    
+    text-align: center; /*Se centra el contenido*/    
 }
 @font-face{ /*carga una fuente personalizada desde un archivo*/
     font-family: "fuente"; /*se declara el nombre de la fuente*/
@@ -16,8 +15,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
 }
 #pantalla{
     width: 100%;
-    height: 75%;
-    
+    height: 75%;    
 }
 .video{
   position:absolute; top:0; left:0;
@@ -29,7 +27,6 @@ html, body { /*afecta a todo el cuerpo del documento*/
     position:absolute;
     top:50; left:50;
     z-index: 2;
-    
     width: 30%; /*El ancho de la imagen cambia segun el ancho de la pag*/
     padding-top: 1%; /*crea un margen interior*/
     animation-name: giro; /*se declara una animacion con el nombre de "bordes"*/
@@ -42,7 +39,8 @@ html, body { /*afecta a todo el cuerpo del documento*/
 @keyframes giro {from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}}
 #comandos{
-    
+  width: 100%;  
+  height: 20%;   
 }
 .modo{
     
@@ -51,7 +49,8 @@ html, body { /*afecta a todo el cuerpo del documento*/
     
 }
 .final{ /*afecta a la seccion final*/
-    font-size: 3vw; /*tamaño de letra*/
-    height: 7%; /*define una altura de 30px a la caja*/
+    width: 100%;  
+    height: 5%; /*define una altura de 30px a la caja*/
+    font-size: 2vw; /*tamaño de letra*/
     border-top: solid 1px black; /*colorea solo el border superior de la caja*/
 }
