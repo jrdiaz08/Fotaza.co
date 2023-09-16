@@ -50,7 +50,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
 }
 .final{ /*afecta a la seccion final*/
     width: 100%;  
-    height: 5%; /*define una altura de 30px a la caja*/
+    height: 95%; /*define una altura de 30px a la caja*/
     font-size: 2vw; /*tamaño de letra*/
     border-top: solid 1px black; /*colorea solo el border superior de la caja*/
 }
