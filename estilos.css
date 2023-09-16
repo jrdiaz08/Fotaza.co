@@ -28,7 +28,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
 }
 .vortice{
     position:absolute;
-    top:50; left:50;
+    top:5%; left:0;
     z-index: 2;
     width: 30%; /*El ancho de la imagen cambia segun el ancho de la pag*/
     padding-top: 1%; /*crea un margen interior*/
