@@ -39,6 +39,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
 @keyframes giro {from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}}
 #comandos{
+ position:relative;
   width: 100%;  
   height: 20%;   
 }
@@ -49,6 +50,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
     
 }
 .final{ /*afecta a la seccion final*/
+    position:relative;
     width: 100%;  
     height: 95%; /*define una altura de 30px a la caja*/
     font-size: 2vw; /*tamaño de letra*/
