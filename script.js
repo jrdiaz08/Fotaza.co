@@ -3,6 +3,7 @@
 var alto = window.innerHeight;
   console.log(ancho);
   console.log(alto);
+  document.getElementById(' ').style.transform="scale(0)"; // en la seccion "" se altera la propiedad css escala 
 })();
 
 function fecha() { // funcion que extrae la fecha del navegador, codigo descargado
