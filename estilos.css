@@ -20,13 +20,13 @@ html, body { /*afecta a todo el cuerpo del documento*/
     display: flex;
     justify-content: center;
 }
-.video{
+#video{
   position:absolute; top:0; left:0;
   top: 0px;
   left : 0px;
   z-index: 1;
 }
-.vortice{
+#vortice{
     position:absolute;
     top:5%; left:0;
     z-index: 2;
@@ -46,18 +46,18 @@ html, body { /*afecta a todo el cuerpo del documento*/
   width: 100%;  
   height: 20%;   
 }
-.modo{
+#modo{
     width: 40%;  
   height: 20%; 
     font-size: 5vw; /*tamaño de letra*/
 }
-.captura{
+#captura{
     width: 40%;  
   height: 20%;
     font-size: 5vw; /*tamaño de letra*/
     
 }
-.final{ /*afecta a la seccion final*/
+#final{ /*afecta a la seccion final*/
     position:relative;
     width: 100%;  
     height: 5%; /*define una altura a caja*/
