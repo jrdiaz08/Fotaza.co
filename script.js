@@ -1,10 +1,18 @@
-(function(){
+const video = document.getElementById("video");
+  function startup() {
   var ancho = window.innerWidth;
-var alto = window.innerHeight;
+  var alto = window.innerHeight;
   console.log(ancho);
   console.log(alto);
   //document.getElementById(' ').style.transform="scale(0)"; // en la seccion "" se altera la propiedad css escala 
-})();
+    
+  navigator.mediaDevices.getUserMedia({
+    audio: false,
+    video: { width: AnchoVideo, height: AltoVideo },
+}).then(stream => {video.srcObject = stream;
+                  }).catch(console.error)
+  }
+window.addEventListener('load',startup, false);
 
 function fecha() { // funcion que extrae la fecha del navegador, codigo descargado
     var hoy = new Date();
