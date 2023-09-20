@@ -1,5 +1,9 @@
 * { /*afecta a todo el documento*/
+    overflow: hidden; /* evita el scroll hacia abajo*/
+    margin: 0px ; /*distancia de margenes exteriores*/
+    padding: 0px; /*distancia de margenes interiores*/    
     box-sizing: border-box; /*borde de los bloques incluidos margin y padding*/
+    text-align: center; /*Se centra el contenido*/  
 }
 @font-face{ /*carga una fuente personalizada desde un archivo*/
     font-family: "fuente"; /*se declara el nombre de la fuente*/
