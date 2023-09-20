@@ -1,6 +1,4 @@
-* { /*afecta a todo el documento*/
-    box-sizing: border-box; /*borde de los bloques incluidos margin y padding*/
-}
+
 @font-face{ /*carga una fuente personalizada desde un archivo*/
     font-family: "fuente"; /*se declara el nombre de la fuente*/
     src: url(digital-7.ttf); /*se selecciona el archivo de la fuente*/
@@ -10,8 +8,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
     height: 100% ; /*se toma como alto de la pag todo el contenido*/      
 }
 #fondo{
-  display:block;
-    
+  display:block;  
 }
 #pantalla{
     width: 100%;
