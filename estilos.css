@@ -15,15 +15,12 @@ html, body { /*afecta a todo el cuerpo del documento*/
 #pantalla{    
 }
 #video{
-  position:absolute;
-  top: 0px;
-  left : 0px;
-  z-index: 1;
+
 }
 #vortice{
     position:absolute;
     top:100px; left:200px;
-    z-index:2;
+    z-index:1;
     width: 30%; /*El ancho de la imagen cambia segun el ancho de la pag*/
     padding-top: 30%; /*crea un margen interior*/
     animation-name: giro; /*se declara una animacion con el nombre de "bordes"*/
@@ -37,7 +34,6 @@ html, body { /*afecta a todo el cuerpo del documento*/
     to {transform: rotate(360deg);}}
 
 #comandos{
- position:relative;
 }
 #modo{
     font-size: 5vw; /*tamaño de letra*/
