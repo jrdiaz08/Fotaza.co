@@ -5,6 +5,8 @@ const video = document.getElementById("video");
   console.log(ancho);
   console.log(alto);
   //document.getElementById(' ').style.transform="scale(0)"; // en la seccion "" se altera la propiedad css escala 
+var anchovideo = ancho;
+var altovideo = ancho*1.33;    
     
   navigator.mediaDevices.getUserMedia({
     audio: false,
