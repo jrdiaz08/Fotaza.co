@@ -1,4 +1,6 @@
-
+* { /*afecta a todo el documento*/
+    box-sizing: border-box; /*borde de los bloques incluidos margin y padding*/
+}
 @font-face{ /*carga una fuente personalizada desde un archivo*/
     font-family: "fuente"; /*se declara el nombre de la fuente*/
     src: url(digital-7.ttf); /*se selecciona el archivo de la fuente*/
@@ -8,7 +10,8 @@ html, body { /*afecta a todo el cuerpo del documento*/
     height: 100% ; /*se toma como alto de la pag todo el contenido*/      
 }
 #fondo{
-  display:block;  
+  display:block;
+    
 }
 #pantalla{
     width: 100%;
@@ -23,7 +26,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
 #vortice{
     position:absolute;
     top:100px; left:200px;
-    z-index: 2;
+    z-index:2;
     width: 30%; /*El ancho de la imagen cambia segun el ancho de la pag*/
     padding-top: 30%; /*crea un margen interior*/
     animation-name: giro; /*se declara una animacion con el nombre de "bordes"*/
@@ -35,26 +38,23 @@ html, body { /*afecta a todo el cuerpo del documento*/
 }
 @keyframes giro {from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}}
+
 #comandos{
  position:relative;
   width: 100%;
-    height: 25%;   
+    height: 15%;   
 }
 #modo{
-    width: 40%;  
-  height: 20%; 
     font-size: 5vw; /*tamaño de letra*/
 }
 #captura{
-    width: 40%;  
-  height: 20%;
     font-size: 5vw; /*tamaño de letra*/
     
 }
 #final{ /*afecta a la seccion final*/
     position:relative;
     width: 100%;  
-    height: 5%; /*define una altura a caja*/
-    font-size: 2vw; /*tamaño de letra*/
+    height: 20%; /*define una altura a caja*/
+    font-size:4vw; /*tamaño de letra*/
     border-top: solid 1px black; /*colorea solo el border superior de la caja*/
 }
