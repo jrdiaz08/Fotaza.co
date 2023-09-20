@@ -23,12 +23,8 @@ const video = document.getElementById("video");
   document.getElementById('final').style.heigth=altofinal; // en la seccion "final" se altera la propiedad css heigth
 
   navigator.mediaDevices.getUserMedia({
-    audio: false;
-    video: {
-    facingMode: {
-      exact: 'environment'
-    }
-  }
+    audio: false,
+    video: true,
 }
 //{ width: anchovideo, height: altovideo },
 }).then(stream => {video.srcObject = stream;
