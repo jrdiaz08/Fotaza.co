@@ -26,10 +26,13 @@ document.getElementById("captura").value=ancho; // se incluye el dato de las hor
   document.getElementById('final').style.heigth=altofinal; // en la seccion "final" se altera la propiedad css heigth
 
   navigator.mediaDevices.getUserMedia({
-    audio: false,
-    video: true,
-//{ width: anchovideo, height: altovideo },
-}).then(stream => {video.srcObject = stream;
+  audio: false,
+  video: {
+    width: { ideal: 1920 },
+    height: { ideal: 1080 }
+  }
+}
+).then(stream => {video.srcObject = stream;
                   }).catch(console.error)
   }
 window.addEventListener('load',startup, false);
