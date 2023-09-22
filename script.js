@@ -3,8 +3,8 @@ const video = document.getElementById("video");
   function startup() {
   var ancho = window.screen.width;
   var alto = window.screen.height;
-  var anchovideo = window.scrn.width;
-  var altovideo = window.scrn.height;  console.log(ancho);
+  var anchovideo = window.width;
+  var altovideo = window.height;  console.log(ancho);
   console.log(alto); 
   //var anchovideo = ancho;
   //var altovideo = ancho*2;
