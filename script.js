@@ -1,11 +1,12 @@
 const video = document.getElementById("video");
+
   function startup() {
   var ancho = window.innerWidth;
   var alto = window.innerHeight;
   console.log(ancho);
   console.log(alto); 
   var anchovideo = ancho;
-  var altovideo = ancho*1.33;
+  var altovideo = ancho*1.34;
   var altorestante = alto-altovideo;
   var altocomandos = altorestante*0.8;
   var altofinal = altorestante*0.2;
@@ -16,7 +17,7 @@ document.getElementById("captura").value=ancho; // se incluye el dato de las hor
  document.getElementById('fondo').style.width=ancho; // en la seccion "fondo" se altera la propiedad css width 
   document.getElementById('fondo').style.heigth=alto; // en la seccion "fondo" se altera la propiedad css heigth
     
-  document.getElementById('pantalla').style.width=ancho; // en la seccion "pantalla" se altera la propiedad css width 
+  document.getElementById('pantalla').style.width=anchovideo; // en la seccion "pantalla" se altera la propiedad css width 
   document.getElementById('pantalla').style.heigth=altovideo; // en la seccion "pantalla" se altera la propiedad css heigth
   
   document.getElementById('comandos').style.width=ancho; // en la seccion "comandos" se altera la propiedad css width 
@@ -28,8 +29,8 @@ document.getElementById("captura").value=ancho; // se incluye el dato de las hor
   navigator.mediaDevices.getUserMedia({
   audio: false,
   video: {
-    width: { ideal: 1080},
-    height: { ideal: 720 }
+    width: { ideal: anchovideo},
+    height: { ideal: altovideo}
   }
 }
 ).then(stream => {video.srcObject = stream;
