@@ -37,7 +37,8 @@ html, body { /*afecta a todo el cuerpo del documento*/
 @keyframes giro {from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}}
 
-#comandos{
+#comandos{ 
+ display:block;   
 }
 #modo{
     font-size: 5vw; /*tamaño de letra*/
