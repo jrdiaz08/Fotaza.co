@@ -6,7 +6,7 @@ const video = document.getElementById("video");
   console.log(ancho);
   console.log(alto); 
   var anchovideo = ancho;
-  var altovideo = ancho*1.34;
+  var altovideo = ancho*2;
   var altorestante = alto-altovideo;
   var altocomandos = altorestante*0.8;
   var altofinal = altorestante*0.2;
