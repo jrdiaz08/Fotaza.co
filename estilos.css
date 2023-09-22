@@ -38,7 +38,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
     to {transform: rotate(360deg);}}
 
 #comandos{ 
- display:block;   
+ display:content;   
 }
 #modo{
     font-size: 5vw; /*tamaño de letra*/
