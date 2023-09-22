@@ -1,8 +1,8 @@
 const video = document.getElementById("video");
 
   function startup() {
-  var ancho = window.Width;
-  var alto = window.Height;
+  var ancho = window.screen.width;
+  var alto = window.screen.height;
   console.log(ancho);
   console.log(alto); 
   var anchovideo = ancho;
