@@ -25,8 +25,8 @@ document.getElementById("captura").value=anchovideo; // se incluye el dato de la
   navigator.mediaDevices.getUserMedia({
   audio: false,
   video: {
-    width:anchovideo,
-    height:altovideo,
+    width:720,
+    height:1080,
   }
 }
 ).then(stream => {video.srcObject = stream;
