@@ -4,11 +4,12 @@ const video = document.getElementById("video");
   var ancho = window.screen.width;
   var alto = window.screen.height;
   var anchovideo = window.width;
-  var altovideo = window.height;  console.log(ancho);
+  var altovideo = window.height:/;
+  console.log(ancho);
   console.log(alto); 
   //var anchovideo = ancho;
   //var altovideo = ancho*2;
-  var altorestante = alto*0.7;
+  var altorestante = alto*0.3;
   var altocomandos = altorestante*0.8;
   var altofinal = altorestante*0.2;
     
