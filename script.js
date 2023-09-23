@@ -13,9 +13,9 @@ const video = document.getElementById("video");
   var altocomandos = altorestante*0.8;
   var altofinal = altorestante*0.2;
     
-  document.getElementById("modo").value=alto; // se incluye el dato de las horas en el atributo value para mostrarse en la app
+  document.getElementById("modo").value=altovideo; // se incluye el dato de las horas en el atributo value para mostrarse en la app
 
-document.getElementById("captura").value=ancho; // se incluye el dato de las horas en el atributo value para mostrarse en la a
+document.getElementById("captura").value=anchovideo; // se incluye el dato de las horas en el atributo value para mostrarse en la a
  document.getElementById('fondo').style.width=ancho; // en la seccion "fondo" se altera la propiedad css width 
   document.getElementById('fondo').style.heigth=alto; // en la seccion "fondo" se altera la propiedad css heigth
     
