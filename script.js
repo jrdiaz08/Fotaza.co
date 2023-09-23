@@ -2,30 +2,24 @@ const video = document.getElementById("video");
 
   function startup() {
   var ancho = window.screen.width;
-  var alto = window.screen.height;
-  var anchovideo = window.width;
-  var altovideo = window.height;
-  console.log(anchovideo);
-  console.log(altovideo); 
-  //var anchovideo = ancho;
-  //var altovideo = ancho*2;
+  var alto = window.screen.height; 
+  var anchovideo = ancho;
+  var altovideo = ancho*1.7;
   var altorestante = alto*0.3;
   var altocomandos = altorestante*0.8;
-  var altofinal = altorestante*0.2;
-    
-  document.getElementById("modo").value=altovideo; // se incluye el dato de las horas en el atributo value para mostrarse en la app
+  var altofinal = altorestante*0.2
+  console.log(anchovideo);
+  console.log(altovideo);
+      document.getElementById("modo").value=altovideo; // se incluye el dato de las horas en el atributo value para mostrarse en la app
 
 document.getElementById("captura").value=anchovideo; // se incluye el dato de las horas en el atributo value para mostrarse en la a
  document.getElementById('fondo').style.width=ancho; // en la seccion "fondo" se altera la propiedad css width 
   document.getElementById('fondo').style.heigth=alto; // en la seccion "fondo" se altera la propiedad css heigth
-    
-  document.getElementById('pantalla').style.width=anchovideo; // en la seccion "pantalla" se altera la propiedad css width 
+     document.getElementById('pantalla').style.width=anchovideo; // en la seccion "pantalla" se altera la propiedad css width 
   document.getElementById('pantalla').style.heigth=altovideo; // en la seccion "pantalla" se altera la propiedad css heigth
-  
-  document.getElementById('comandos').style.width=ancho; // en la seccion "comandos" se altera la propiedad css width 
+   document.getElementById('comandos').style.width=ancho; // en la seccion "comandos" se altera la propiedad css width 
   document.getElementById('comandos').style.heigth=altocomandos; // en la seccion "<comandos" se altera la propiedad css heigth
-
-  document.getElementById('final').style.width=ancho; // en la seccion "final" se altera la propiedad css width 
+ document.getElementById('final').style.width=ancho; // en la seccion "final" se altera la propiedad css width 
   document.getElementById('final').style.heigth=altofinal; // en la seccion "final" se altera la propiedad css heigth
 
   navigator.mediaDevices.getUserMedia({
