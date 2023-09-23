@@ -4,7 +4,7 @@ const video = document.getElementById("video");
   var ancho = window.screen.width;
   var alto = window.screen.height;
   var anchovideo = window.width;
-  var altovideo = window.height:/;
+  var altovideo = window.height;
   console.log(ancho);
   console.log(alto); 
   //var anchovideo = ancho;
