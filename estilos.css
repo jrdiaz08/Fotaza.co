@@ -19,7 +19,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
 #pantalla{    
 }
 #video{
-transform: scale(0.7);
+transform: scale(0.1);
 }
 #vortice{
     position:absolute;
