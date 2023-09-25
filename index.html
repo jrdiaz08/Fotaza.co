@@ -5,7 +5,7 @@
 
         <meta name="descripcion" content="Interfaz inicial">
         <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       <meta name="MobileOptimized" content="width">
         
         <meta name="HandheldFriendly" content="true">
@@ -19,16 +19,20 @@
 </head>
 
 <body id="fondo">
+    <div id="superior">
+    </div>
     <div id="pantalla">
         <video id="video" autoplay> Video no disponible
         </video>
         <img src="vortice.png" id="vortice"/>
     </div>
+    <div id="inferior">
+    </div>
     <div id="comandos">
-      <input type="tel" id="modo">
-      <input type="tel" id="captura">
+        <button class="opciones" id="modo" onclick="">Modor</button>
+        <button class="opciones" id="captura" onclick="">Capturar</button> 
 
-       
+   
     </div>
     <footer id="final">
         Ultravisor.co 2023 ♦ Creado por: Jose Diaz ♦
