@@ -24,7 +24,7 @@ const video = document.getElementById("video");
 
    document.getElementById("modo").value="modo"; // se incluye el dato de las horas en el atributo value para mostrarse en la app
    document.getElementById("captura").value="captura"; // se incluye el dato de las horas en el atributo value para mostrarse en la a
-   document.getElementById('fondo').style.height = "50" + "%"; // en la seccion "fondo" se altera la propiedad css heigth
+   document.getElementById('fondo').style.height = "90" + "%"; // en la seccion "fondo" se altera la propiedad css heigth
    document.getElementById('fondo').style.width = ancho + "px"; // en la seccion "fondo" se altera la propiedad css width 
    document.getElementById('superior').style.height = altosuperior + "px"; // en la seccion "fondo" se altera la propiedad css heigth
    document.getElementById('superior').style.width = ancho + "px"; // en la seccion "fondo" se altera la propiedad css width 
