@@ -42,7 +42,7 @@ const video = document.getElementById("video");
     navigator.mediaDevices.getUserMedia({
       audio: false,
       video: {
-        height:altopantalla,
+        height:1080,
         width:ancho,
         }
     }
