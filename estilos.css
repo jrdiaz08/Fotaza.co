@@ -1,4 +1,4 @@
-* { /*afecta a todo el documento*/
+*{ /*afecta a todo el documento*/
     overflow: hidden; /* evita el scroll hacia abajo*/
     margin: 0px ; /*distancia de margenes exteriores*/
     padding: 0px; /*distancia de margenes interiores*/    
@@ -11,7 +11,7 @@
 }
 html, body { /*afecta a todo el cuerpo del documento*/
     font-family: "fuente"; /*estilo de letra*/  
-height:100%;       
+   
 
 }
 #fondo{
