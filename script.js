@@ -1,16 +1,30 @@
 const video = document.getElementById("video");
 
   function startup() {
+
     var alto = window.screen.height; 
     var ancho = window.screen.width;
     var altocomandos = alto*0.06;
     var altofinal = alto*0.04;
-    var altopantalla = ancho*1.77;
+    var altopantalla = ancho*1.8;
+    var altovideo = ancho*1.77;
     var altosuperior = (alto-altopantalla-altocomandos-altofinal)/2;
     var altoinferior = (alto-altopantalla-altocomandos-altofinal)/2;
     var centro = (ancho-(ancho*0.3))/2;
 
     var total = altosuperior+altopantalla+altoinferior+altocomandos+altofinal;
+
+navigator.mediaDevices.getUserMedia({
+      audio: false,
+      video: {
+        height: altovideo,
+        width:ancho,
+        }
+    }
+    ).then(stream => {
+      video.srcObject = stream;
+    
+    }).catch(console.error)
 
     console.log("alto= ",alto);
     console.log("ancho= ",ancho);
@@ -30,6 +44,9 @@ const video = document.getElementById("video");
    document.getElementById('superior').style.width = ancho + "px"; // en la seccion "fondo" se altera la propiedad css width 
    document.getElementById('pantalla').style.heigth = altopantalla + "px"; // en la seccion "pantalla" se altera la propiedad css heigth
    document.getElementById('pantalla').style.width = ancho + "px"; // en la seccion "pantalla" se altera la propiedad css width 
+
+document.getElementById('video').style.heigth = altovideo + "px"; // en la seccion "pantalla" se altera la propiedad css heigth
+   document.getElementById('video').style.width = ancho + "px"; // en la seccion "pantalla" se altera la propiedad css width 
    document.getElementById('inferior').style.height = altoinferior + "px"; // en la seccion "fondo" se altera la propiedad css heigth
    document.getElementById('inferior').style.width = ancho + "px"; // en la seccion "fondo" se altera la propiedad css width 
    document.getElementById('comandos').style.height = altocomandos + "px"; // en la seccion "<comandos" se altera la propiedad css heigth
@@ -39,20 +56,10 @@ const video = document.getElementById("video");
    document.getElementById('vortice').style.top = altosuperior + "px"; // en la seccion "final" se altera la propiedad css heigth
    document.getElementById('vortice').style.left = centro + "px"; // en la seccion "final" se altera la propiedad css width 
  
-    navigator.mediaDevices.getUserMedia({
-      audio: false,
-      video: {
-        height:1080,
-        width:ancho,
-        }
-    }
-    ).then(stream => {
-      video.srcObject = stream;
-    
-    }).catch(console.error)
-  }
+}
   
   window.addEventListener('load',startup, false);
+
 
   function fecha() { // funcion que extrae la fecha del navegador, codigo descargado
     var hoy = new Date();
