@@ -2,8 +2,8 @@ const video = document.getElementById("video");
 
   function startup() {
 
-    var alto = window.innerheigth; 
-    var ancho = window.innerwidth;
+    var alto = window.screen.higth; 
+    var ancho = window.screen.width;
     var altocomandos = alto*0.06;
     var altofinal = alto*0.04;
     var altopantalla = ancho*1.8;
