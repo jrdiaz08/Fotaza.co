@@ -42,8 +42,9 @@ navigator.mediaDevices.getUserMedia({
    document.getElementById('fondo').style.width = ancho + "px"; // en la seccion "fondo" se altera la propiedad css width 
    document.getElementById('superior').style.height = altosuperior + "px"; // en la seccion "fondo" se altera la propiedad css heigth
    document.getElementById('superior').style.width = ancho + "px"; // en la seccion "fondo" se altera la propiedad css width 
-   document.getElementById('pantalla').style.heigth = altopantalla + "px"; // en la seccion "pantalla" se altera la propiedad css heigth
-   document.getElementById('pantalla').style.width = ancho + "px"; // en la seccion "pantalla" se altera la propiedad css width 
+   
+document.getElementById('pantalla').style.height = altopantalla + "px"; // en la seccion "pantalla" se altera la propiedad css heigth
+ document.getElementById('pantalla').style.width = ancho + "px"; // en la seccion "pantalla" se altera la propiedad css width 
 
 document.getElementById('video').style.heigth = altovideo + "px"; // en la seccion "pantalla" se altera la propiedad css heigth
    document.getElementById('video').style.width = ancho + "px"; // en la seccion "pantalla" se altera la propiedad css width 
