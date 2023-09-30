@@ -2,8 +2,8 @@ const video = document.getElementById("video");
 
   function startup() {
 
-    var alto = window.screen.height; 
-    var ancho = window.screen.width;
+    var alto = window.innerheigth; 
+    var ancho = window.innerwidth;
     var altocomandos = alto*0.06;
     var altofinal = alto*0.04;
     var altopantalla = ancho*1.8;
@@ -17,7 +17,7 @@ const video = document.getElementById("video");
 navigator.mediaDevices.getUserMedia({
       audio: false,
       video: {
-        height:500,
+        height:altovideo,
         width:ancho,
         }
     }
