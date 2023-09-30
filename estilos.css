@@ -8,12 +8,11 @@
     font-family: "fuente"; /*se declara el nombre de la fuente*/
     src: url(digital-7.ttf); /*se selecciona el archivo de la fuente*/
 }
+
 html, body { /*afecta a todo el cuerpo del documento*/
     font-family: "fuente"; /*estilo de letra*/     
 }
-#fondo{
-    position:relative;
-    
+#fondo{  
     background-color: green;
 }
 #superior{
