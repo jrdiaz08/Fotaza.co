@@ -21,10 +21,6 @@ height: 100%;
 }
 #pantalla{  
     background-color: blue;
- 
-}
-#inferior{
-    background-color: black;
 }
 #video{
  background-color: yellow;
@@ -44,8 +40,10 @@ height: 100%;
 }
 @keyframes giro {from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}}
-@keyframes giro {from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}}
+
+#inferior{
+    background-color: black;
+}
 
 #comandos{ 
  margin-top:5%;
