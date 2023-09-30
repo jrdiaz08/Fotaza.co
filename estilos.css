@@ -3,6 +3,7 @@
     margin: 0px ; /*distancia de margenes exteriores*/
     padding: 0px; /*distancia de margenes interiores*/    
     text-align: center; /*Se centra el contenido*/  
+height: 100%;
    
 }
 @font-face{ /*carga una fuente personalizada desde un archivo*/
@@ -10,9 +11,8 @@
     src: url(digital-7.ttf); /*se selecciona el archivo de la fuente*/
 }
 html, body { /*afecta a todo el cuerpo del documento*/
-    font-family: "fuente"; /*estilo de letra*/  
-   
-
+    font-family: "fuente"; /*estilo de letra*/     
+height: 100%;
 }
 #fondo{
 background-color: green;
