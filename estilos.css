@@ -21,7 +21,6 @@ background-color: green;
     background-color: black;
 }
 #pantalla{  
-    height: 500px;
     background-color: blue;
  
 }
@@ -29,7 +28,7 @@ background-color: green;
     background-color: black;
 }
 #video{
-    heigth: 500px;
+ background-color: yellow;
 }
 #vortice{
     position:absolute; 
