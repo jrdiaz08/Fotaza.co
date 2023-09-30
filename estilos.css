@@ -13,6 +13,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
 height: 100vh;
 }
 #fondo{
+height: 100vh
 background-color: green;
 }
 #superior{
