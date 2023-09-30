@@ -2,9 +2,7 @@
     overflow: hidden; /* evita el scroll hacia abajo*/
     margin: 0px ; /*distancia de margenes exteriores*/
     padding: 0px; /*distancia de margenes interiores*/    
-    text-align: center; /*Se centra el contenido*/  
-height: 100%;
-   
+    text-align: center; /*Se centra el contenido*/   
 }
 @font-face{ /*carga una fuente personalizada desde un archivo*/
     font-family: "fuente"; /*se declara el nombre de la fuente*/
