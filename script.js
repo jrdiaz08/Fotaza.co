@@ -18,7 +18,7 @@ navigator.mediaDevices.getUserMedia({
       audio: false,
       video: {
        facingMode: "environment",
-       width: ancho, 
+       width: ancho; 
        height: altovideo; }
     }
     ).then(stream => {
