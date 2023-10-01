@@ -61,7 +61,6 @@ margin-button:10vh;
     width: 40%;
 }
 #final{ /*afecta a la seccion final*/
-    position:relative;
     font-size:2vw; /*tamaño de letra*/
     border-top: solid 1px black; /*colorea solo el border superior de la caja*/
 }
