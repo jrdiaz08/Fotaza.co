@@ -10,9 +10,11 @@
 }
 
 html, body { /*afecta a todo el cuerpo del documento*/
+height:100 hv;
     font-family: "fuente"; /*estilo de letra*/     
 }
-#fondo{  
+#fondo{ 
+    height:100 hv;
     background-color: green;
 }
 #superior{
@@ -22,9 +24,6 @@ html, body { /*afecta a todo el cuerpo del documento*/
     background-color: blue;
 }
 #video{
-position:absolute;
-top:0px; left:0px;
-z-index:1; 
  background-color: yellow;
 }
 #vortice{
