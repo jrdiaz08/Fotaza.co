@@ -44,13 +44,13 @@ document.getElementById('fondo').style.height = alto + "px"; // en la seccion "f
 document.getElementById('pantalla').style.height = altopantalla + "px"; // en la seccion "pantalla" se altera la propiedad css heigth
  document.getElementById('pantalla').style.width = ancho + "px"; // en la seccion "pantalla" se altera la propiedad css width 
 
-document.getElementById('video').style.heigth = altovideo + "px"; // en la seccion "pantalla" se altera la propiedad css heigth
+document.getElementById('video').style.height = altovideo + "px"; // en la seccion "pantalla" se altera la propiedad css height
    document.getElementById('video').style.width = ancho + "px"; // en la seccion "pantalla" se altera la propiedad css width 
    document.getElementById('inferior').style.height = altoinferior + "px"; // en la seccion "fondo" se altera la propiedad css heigth
    document.getElementById('inferior').style.width = ancho + "px"; // en la seccion "fondo" se altera la propiedad css width 
    document.getElementById('comandos').style.height = altocomandos + "px"; // en la seccion "<comandos" se altera la propiedad css heigth
    document.getElementById('comandos').style.width = ancho + "px"; // en la seccion "comandos" se altera la propiedad css width 
-   document.getElementById('final').style.heigth = altofinal + "px"; // en la seccion "final" se altera la propiedad css heigth
+   document.getElementById('final').style.height = altofinal + "px"; // en la seccion "final" se altera la propiedad css heigth
    document.getElementById('final').style.width = ancho + "px"; // en la seccion "final" se altera la propiedad css width 
    document.getElementById('vortice').style.top = altosuperior + "px"; // en la seccion "final" se altera la propiedad css heigth
    document.getElementById('vortice').style.left = centro + "px"; // en la seccion "final" se altera la propiedad css width 
