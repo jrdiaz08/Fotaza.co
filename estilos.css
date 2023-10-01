@@ -30,6 +30,8 @@ margin-button:10vh;
 }
 #vortice{
     position:absolute;
+top:0px;
+left:0px;
     z-index:1;
     width: 30%; /*El ancho de la imagen cambia segun el ancho de la pag*/
     padding-top: 0; /*crea un margen interior*/
