@@ -1,5 +1,5 @@
 *{ /*afecta a todo el documento*/
-    overflow: hidden; */evita el scroll hacia abajo*/
+    */overflow: hidden; evita el scroll hacia abajo*/
     margin: 0px ; /*distancia de margenes exteriores*/
     padding: 0px; /*distancia de margenes interiores*/    
     text-align: center; /*Se centra el contenido*/   
