@@ -24,7 +24,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
 #video{
 position:absolute;
 top:0px; left:0px;
-z-index:2;
+z-index:1; 
  background-color: yellow;
 }
 #vortice{
