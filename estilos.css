@@ -10,11 +10,11 @@
 }
 
 html, body { /*afecta a todo el cuerpo del documento*/
-height:100 vh;
+height:100vh;
     font-family: "fuente"; /*estilo de letra*/     
 }
 #fondo{ 
-    height:100 vh;
+    height:100vh;
     background-color: green;
 }
 #superior{
