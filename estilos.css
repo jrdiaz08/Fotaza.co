@@ -14,8 +14,10 @@ height:100vh;
     font-family: "fuente"; /*estilo de letra*/     
 }
 #fondo{ 
-    height:100vh;
+    height:80vh;
     background-color: green;
+margin-top:10vh;
+margin-button:10vh;
 }
 #superior{
     background-color: black;
@@ -47,7 +49,7 @@ height:100vh;
 }
 
 #comandos{ 
- margin-top:5%;
+ margin-top:5vh;
  display:inline-block;  
  text-align: center; /*Se centra el contenido*/   
 }
