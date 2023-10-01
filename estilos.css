@@ -1,5 +1,5 @@
 *{ /*afecta a todo el documento*/
-    */overflow: hidden; evita el scroll hacia abajo*/
+    /*overflow: hidden; evita el scroll hacia abajo*/
     margin: 0px ; /*distancia de margenes exteriores*/
     padding: 0px; /*distancia de margenes interiores*/    
     text-align: center; /*Se centra el contenido*/   
@@ -50,6 +50,7 @@ left:0px;
 }
 
 #comandos{ 
+position: relative;
  margin-top:5vh;
  display:inline-block;  
  text-align: center; /*Se centra el contenido*/   
@@ -63,6 +64,7 @@ left:0px;
     width: 40%;
 }
 #final{ /*afecta a la seccion final*/
+position: relative;
     font-size:2vw; /*tamaño de letra*/
     border-top: solid 1px black; /*colorea solo el border superior de la caja*/
 }
