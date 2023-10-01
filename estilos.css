@@ -14,10 +14,8 @@ height:100vh;
     font-family: "fuente"; /*estilo de letra*/     
 }
 #fondo{ 
-    height:80vh;
+    height:100vh;
     background-color: green;
-margin-top:10vh;
-margin-button:10vh;
 }
 #superior{
     background-color: black;
@@ -49,8 +47,7 @@ left:0px;
     background-color: black;
 }
 
-#comandos{ 
-position: relative;
+#comandos{
  margin-top:5vh;
  display:inline-block;  
  text-align: center; /*Se centra el contenido*/   
@@ -64,7 +61,6 @@ position: relative;
     width: 40%;
 }
 #final{ /*afecta a la seccion final*/
-position: relative;
     font-size:2vw; /*tamaño de letra*/
     border-top: solid 1px black; /*colorea solo el border superior de la caja*/
 }
