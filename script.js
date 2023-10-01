@@ -55,7 +55,7 @@ document.getElementById('video').style.height = altovideo + "px"; // en la secci
    document.getElementById('comandos').style.width = ancho + "px"; // en la seccion "comandos" se altera la propiedad css width 
    document.getElementById('final').style.height = altofinal + "px"; // en la seccion "final" se altera la propiedad css heigth
    document.getElementById('final').style.width = ancho + "px"; // en la seccion "final" se altera la propiedad css width 
-   document.getElementById('vortice').style.top = altoinferior + "px"; // en la seccion "final" se altera la propiedad css heigth
+   document.getElementById('vortice').style.top = altosuperior + "px"; // en la seccion "final" se altera la propiedad css heigth
    document.getElementById('vortice').style.left = centro + "px"; // en la seccion "final" se altera la propiedad css width 
  
 }
