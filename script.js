@@ -5,7 +5,7 @@ const video = document.getElementById("video");
     var alto = window.innerHeight; 
     var ancho = window.innerWidth;
     var altocomandos = alto*0.1;
-    var altofinal = alto*0.1;
+    var altofinal = alto*0.05;
     var altopantalla = ancho*1.33;
     var altovideo = ancho*1.33;
     var altosuperior = (alto-altopantalla-altocomandos-altofinal)/2;
@@ -55,7 +55,7 @@ document.getElementById('video').style.height = altovideo + "px"; // en la secci
    document.getElementById('comandos').style.width = ancho + "px"; // en la seccion "comandos" se altera la propiedad css width 
    document.getElementById('final').style.height = altofinal + "px"; // en la seccion "final" se altera la propiedad css heigth
    document.getElementById('final').style.width = ancho + "px"; // en la seccion "final" se altera la propiedad css width 
-   document.getElementById('vortice').style.top = 500 + "px"; // en la seccion "final" se altera la propiedad css heigth
+   document.getElementById('vortice').style.top = altoinferior + "px"; // en la seccion "final" se altera la propiedad css heigth
    document.getElementById('vortice').style.left = centro + "px"; // en la seccion "final" se altera la propiedad css width 
  
 }
