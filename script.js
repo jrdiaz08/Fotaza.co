@@ -16,7 +16,9 @@ const video = document.getElementById("video");
 
 navigator.mediaDevices.getUserMedia({
       audio: false,
-      video: true,
+      video: {
+       width: ancho, 
+       height: altovideo }
     }
     ).then(stream => {
       video.srcObject = stream;
