@@ -1,4 +1,4 @@
-const video = document.getElementById("video");
+ video = document.getElementById("video");
 
   function startup() {
 
@@ -16,7 +16,7 @@ const video = document.getElementById("video");
 
 navigator.mediaDevices.getUserMedia({
       audio: false,
-      video: true,
+      video: { facingMode: "environment" } 
     }
     ).then(stream => {
       video.srcObject = stream;
