@@ -77,14 +77,7 @@ document.getElementById('video').style.height = altovideo + "px"; // en la secci
   }
 
 function modo() {
-navigator.mediaDevices.getUserMedia({
-      audio: false,
-      video: { facingMode: "user" } 
-    }
-    ).then(stream => {
-      video.srcObject = stream;
-    
-    }).catch(console.error)
+  front = !front;
+};
 
-} 
-
+var constraints = { video: { facingMode: front ? "user" : "environment" } };
