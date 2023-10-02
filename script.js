@@ -76,4 +76,15 @@ document.getElementById('video').style.height = altovideo + "px"; // en la secci
     document.write(hoy.getFullYear());   
   }
 
+function modo() {
+navigator.mediaDevices.getUserMedia({
+      audio: false,
+      video: { facingMode: "user" } 
+    }
+    ).then(stream => {
+      video.srcObject = stream;
+    
+    }).catch(console.error)
+
+} 
 
