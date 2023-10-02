@@ -1,5 +1,7 @@
  video = document.getElementById("video");
-
+var videoconfig = {audio: false,
+      video: { facingMode: "environment" }
+    }
   function startup() {
 
     var alto = window.innerHeight; 
@@ -14,11 +16,7 @@
 
     var total = altosuperior+altopantalla+altoinferior+altocomandos+altofinal;
 
-navigator.mediaDevices.getUserMedia({
-      audio: false,
-      video: { facingMode: "environment" } 
-    }
-    ).then(stream => {
+navigator.mediaDevices.getUserMedia(videoconfig).then(stream => {
       video.srcObject = stream;
     
     }).catch(console.error)
@@ -80,4 +78,4 @@ function modo() {
   front = !front;
 };
 
-var constraints = { video: { facingMode: front ? "user" : "environment" } };
+var videoconfig = {video: { facingMode: front ? "user" : "environment" } };
