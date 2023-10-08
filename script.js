@@ -73,7 +73,7 @@ document.getElementById('video').style.height = altovideo + "px"; // en la secci
     document.write(" ");
     document.write(hoy.getFullYear());   
   }
-
+let front;
 function modo() {
   front = !front;
 };
