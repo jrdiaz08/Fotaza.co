@@ -46,6 +46,9 @@ function startup() {
   document.getElementById('comandos').style.width = ancho + "px"; // en la seccion "comandos" se altera la propiedad css width 
   document.getElementById('final').style.height = altofinal + "px"; // en la seccion "final" se altera la propiedad css heigth
   document.getElementById('final').style.width = ancho + "px"; // en la seccion "final" se altera la propiedad css width 
+  document.getElementById('lienzo').style.top = altosuperior + "px"; // en la seccion "final" se altera la propiedad css heigth
+  document.getElementById('lienzo').style.height = altovideo + "px"; // en la seccion "lienzo" se altera la propiedad css height
+  document.getElementById('lienzo').style.width = ancho + "px"; // en la seccion "lienzo" se altera la propiedad css width 
   document.getElementById('vortice').style.top = altosuperior + "px"; // en la seccion "final" se altera la propiedad css heigth
   document.getElementById('vortice').style.left = centro + "px"; // en la seccion "final" se altera la propiedad css width 
 }
@@ -98,5 +101,8 @@ function modo() {
   }
 };
 function capturar() {
+  var lienzo = document.getElementById('lienzo')
+  var contexto = lienzo.getContext('2d');
   
+  contexto.drawImage(video, 0, 0, 640, 480);
 };
