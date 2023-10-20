@@ -1,6 +1,7 @@
- let video = document.getElementById("video");
- let canales;
- let cambioCamara = "user";
+let video = document.getElementById("video");
+let pantalla = document.getElementById("pantalla");
+let canales;
+let cambioCamara = "user";
  var videoconfig = {audio: false,
       video: { facingMode: cambioCamara }
     }
@@ -104,5 +105,5 @@ function capturar() {
   var lienzo = document.getElementById('lienzo')
   var contexto = lienzo.getContext('2d');
   
-  contexto.drawImage(video, 0, 0, 640, 480);
+  contexto.drawImage(pantalla, 0, 0, 640, 480);
 };
