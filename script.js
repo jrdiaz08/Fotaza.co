@@ -105,7 +105,6 @@ function capturar() {
   var lienzo = document.getElementById('lienzo')
   var contexto = lienzo.getContext('2d');
   
- contexto.drawImage(video, 0, 0,300,300);
- contexto.drawImage(vortice, 0, 0,300,300);
+ contexto.drawImage(video, 0, 0,640,480);
 
 };
