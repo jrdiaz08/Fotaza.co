@@ -1,5 +1,5 @@
 let video = document.getElementById("video");
-let pantalla = document.getElementById("pantalla");
+let vortice = document.getElementById("vortice");
 let canales;
 let cambioCamara = "user";
  var videoconfig = {audio: false,
@@ -105,5 +105,7 @@ function capturar() {
   var lienzo = document.getElementById('lienzo')
   var contexto = lienzo.getContext('2d');
   
-  contexto.drawImage(pantalla, 0, 0, 640, 480);
+ contexto.drawImage(video, 0, 0);
+ contexto.drawImage(vortice, 0, 0);
+
 };
