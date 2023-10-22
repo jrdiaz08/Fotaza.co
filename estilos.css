@@ -59,11 +59,24 @@ height:100vh;
  display:inline-block;  
  text-align: center; /*Se centra el contenido*/   
 }
+#alternos{
+ margin-top:5vh;
+ display:inline-block;  
+ text-align: center; /*Se centra el contenido*/   
+}
 #modo{
     font-size: 6vw; /*tamaño de letra*/
     width: 40%;
 }
 #captura{
+    font-size: 6vw; /*tamaño de letra*/   
+    width: 40%;
+}
+#aceptar{
+    font-size: 6vw; /*tamaño de letra*/
+    width: 40%;
+}
+#rechazar{
     font-size: 6vw; /*tamaño de letra*/   
     width: 40%;
 }
