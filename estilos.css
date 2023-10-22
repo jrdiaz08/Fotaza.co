@@ -62,7 +62,8 @@ height:100vh;
 #alternos{
  margin-top:5vh;
  display:inline-block;  
- text-align: center; /*Se centra el contenido*/   
+ text-align: center; /*Se centra el contenido*/
+transform: scale(0);   
 }
 #modo{
     font-size: 6vw; /*tamaño de letra*/
