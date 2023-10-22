@@ -2,22 +2,22 @@ let video = document.getElementById("video");
 let vortice = document.getElementById("vortice");
 let canales;
 let cambioCamara = "user";
- var videoconfig = {audio: false,
-      video: { facingMode: cambioCamara }
-    }
+var videoconfig = {audio: false,
+  video: { facingMode: cambioCamara }
+}
+var alto = window.innerHeight; 
+var ancho = window.innerWidth;
+var altocomandos = alto*0.1;
+var altofinal = alto*0.1;
+var altopantalla = ancho*1.33;
+var altovideo = ancho*1.33;
+var altosuperior = (alto-altopantalla-altocomandos-altofinal)/2;
+var altoinferior = (alto-altopantalla-altocomandos-altofinal)/2;
+var centro = (ancho-(ancho*0.3))/2;
+var total = altosuperior+altopantalla+altoinferior+altocomandos+altofinal;
 
 function startup() {
-  var alto = window.innerHeight; 
-  var ancho = window.innerWidth;
-  var altocomandos = alto*0.1;
-  var altofinal = alto*0.1;
-  var altopantalla = ancho*1.33;
-  var altovideo = ancho*1.33;
-  var altosuperior = (alto-altopantalla-altocomandos-altofinal)/2;
-  var altoinferior = (alto-altopantalla-altocomandos-altofinal)/2;
-  var centro = (ancho-(ancho*0.3))/2;
-  var total = altosuperior+altopantalla+altoinferior+altocomandos+altofinal;
-
+  
   navigator.mediaDevices.getUserMedia(videoconfig).then(stream => { 
     video.srcObject = stream,
     canales = stream.getTracks();
@@ -104,5 +104,8 @@ function modo() {
 function capturar() {
   var lienzo = document.getElementById('lienzo')
   var contexto = lienzo.getContext('2d');
+  
   contexto.drawImage(video, 0, 0, 640, 480);
+  contexto.drawImage(vortice, centro, altosuperior, (ancho*0.3), (ancho*0.3));
+
 };
