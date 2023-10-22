@@ -89,7 +89,6 @@ function modo() {
       ;
     }).catch(console.error)
   }
-
   else{
     canales.forEach(track => track.stop())
     cambioCamara = "user";
