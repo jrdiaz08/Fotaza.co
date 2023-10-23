@@ -45,10 +45,6 @@ function startup() {
   document.getElementById('inferior').style.width = ancho + "px"; // en la seccion "fondo" se altera la propiedad css width 
   document.getElementById('comandos').style.height = altocomandos + "px"; // en la seccion "comandos" se altera la propiedad css heigth
   document.getElementById('comandos').style.width = ancho + "px"; // en la seccion "comandos" se altera la propiedad css width 
-
-document.getElementById('alternos').style.height = altocomandos + "px"; // en la seccion "alternos" se altera la propiedad css heigth
-  document.getElementById('alternos').style.width = ancho + "px"; // en la seccion "alternos" se altera la propiedad css width 
- 
   document.getElementById('final').style.height = altofinal + "px"; // en la seccion "final" se altera la propiedad css heigth
   document.getElementById('final').style.width = ancho + "px"; // en la seccion "final" se altera la propiedad css width 
   document.getElementById('lienzo').style.top = altosuperior + "px"; // en la seccion "final" se altera la propiedad css heigth
@@ -111,18 +107,8 @@ function capturar() {
   contexto.drawImage(video, 0, 0, 640, 480);
   contexto.drawImage(vortice, centro, 0, (ancho*0.3), (ancho*0.3));
 
-document.getElementById('alternos').style.transform= "scale(1)"
-document.getElementById('comandos').style.transform= "scale(0)"
 };
 
-function aceptar() { 
+function limpiar() { 
 canvas.width=canvas.width;
-document.getElementById('alternos').style.transform= "scale(0)"
-document.getElementById('comandos').style.transform= "scale(1)"
-};
-
-function rechazar() {
-  canvas.width=canvas.width;
-document.getElementById('alternos').style.transform= "scale(0)"
-document.getElementById('comandos').style.transform= "scale(1)"  
 };
