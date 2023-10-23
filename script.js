@@ -110,5 +110,5 @@ function capturar() {
 };
 
 function limpiar() { 
-canvas.width=canvas.width;
+lienzo.width=lienzo.width;
 };
