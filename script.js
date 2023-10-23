@@ -83,7 +83,7 @@ function modo() {
     console.log("Camara= ",cambioCamara);
     videoconfig = {audio: false,
       video: { facingMode: cambioCamara }
-    }  navigator.mediaDevices.getUserMedia(videoconfig).then(stream => { 
+    };  navigator.mediaDevices.getUserMedia(videoconfig).then(stream => { 
       video.srcObject = stream,
       canales = stream.getTracks();
       ;
@@ -95,7 +95,7 @@ function modo() {
     console.log("Camara= ",cambioCamara);
     videoconfig = {audio: false,
       video: { facingMode: cambioCamara }
-    } navigator.mediaDevices.getUserMedia(videoconfig).then(stream => { 
+    }; navigator.mediaDevices.getUserMedia(videoconfig).then(stream => { 
       video.srcObject = stream,
       canales = stream.getTracks();
       ;
