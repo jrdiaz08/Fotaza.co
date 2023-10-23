@@ -59,27 +59,17 @@ height:100vh;
  display:inline-block;  
  text-align: center; /*Se centra el contenido*/   
 }
-#alternos{
- margin-top:5vh;
- display:inline-block;  
- text-align: center; /*Se centra el contenido*/
-transform: scale(0);   
-}
 #modo{
     font-size: 6vw; /*tamaño de letra*/
-    width: 40%;
+    width: 30%;
 }
 #captura{
     font-size: 6vw; /*tamaño de letra*/   
-    width: 40%;
+    width: 30%;
 }
-#aceptar{
+#limpiar{
     font-size: 6vw; /*tamaño de letra*/
-    width: 40%;
-}
-#rechazar{
-    font-size: 6vw; /*tamaño de letra*/   
-    width: 40%;
+    width: 30%;
 }
 #final{ /*afecta a la seccion final*/
     font-size:2vw; /*tamaño de letra*/
