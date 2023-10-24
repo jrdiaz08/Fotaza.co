@@ -96,19 +96,20 @@ function modo() {
       canales = stream.getTracks();
       ;
     }).catch(console.error)
-    
   }
 };
 
 function capturar() {
   var lienzo = document.getElementById('lienzo')
   var contexto = lienzo.getContext('2d');
-  
   contexto.drawImage(video, 0, 0, 640, 480);
   contexto.drawImage(vortice, centro, 0, (ancho*0.3), (ancho*0.3));
-
 };
 
 function limpiar() { 
-lienzo.width=lienzo.width;
+ lienzo.width=lienzo.width;
+};
+
+function guardar() { 
+
 };

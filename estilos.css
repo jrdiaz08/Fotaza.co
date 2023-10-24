@@ -60,16 +60,20 @@ height:100vh;
  text-align: center; /*Se centra el contenido*/   
 }
 #modo{
-    font-size: 6vw; /*tamaño de letra*/
-    width: 30%;
+    font-size: 5vw; /*tamaño de letra*/
+    width: 20%;
 }
 #captura{
-    font-size: 6vw; /*tamaño de letra*/   
-    width: 30%;
+    font-size: 5vw; /*tamaño de letra*/   
+    width: 20%;
 }
 #limpiar{
-    font-size: 6vw; /*tamaño de letra*/
-    width: 30%;
+    font-size: 5vw; /*tamaño de letra*/
+    width: 20%;
+}
+#guardar{
+    font-size: 5vw; /*tamaño de letra*/
+    width: 20%;
 }
 #final{ /*afecta a la seccion final*/
     font-size:2vw; /*tamaño de letra*/
