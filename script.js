@@ -102,7 +102,7 @@ function modo() {
 function capturar() {
   var lienzo = document.getElementById('lienzo')
   var contexto = lienzo.getContext('2d');
-  contexto.drawImage(video, 0, 0, 480, 640);
+  contexto.drawImage(video, 0, 0, ancho, altopantalla);
   contexto.drawImage(vortice, centro, 0, (vortice.width), (vortice.height));
 };
 
