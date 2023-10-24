@@ -113,7 +113,7 @@ function limpiar() {
 function guardar() { 
 let enlace = document.createElement('a');
       // El título
-      enlace.download = "ultravisor.png";
+      enlace.download = Date. now();
       // Convertir la imagen a Base64 y ponerlo en el enlace
       enlace.href = lienzo.toDataURL();
       // Hacer click en él
