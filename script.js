@@ -40,7 +40,10 @@ function startup() {
   document.getElementById('pantalla').style.height = altopantalla + "px"; // en la seccion "pantalla" se altera la propiedad css heigth
   document.getElementById('pantalla').style.width = ancho + "px"; // en la seccion "pantalla" se altera la propiedad css width 
   document.getElementById('video').style.height = altovideo + "px"; // en la seccion "pantalla" se altera la propiedad css height
-  document.getElementById('video').style.width = ancho + "px"; // en la seccion "pantalla" se altera la propiedad css width 
+  document.getElementById('video').style.width = ancho + "px"; // en la seccion "pantalla" se altera la propiedad css width
+
+document.getElementById('lienzo').style.height = altovideo + "px"; // en la seccion "pantalla" se altera la propiedad css height
+  document.getElementById('lienzo').style.width = ancho + "px"; // en la seccion "pantalla" se altera la propiedad css width 
   document.getElementById('inferior').style.height = altoinferior + "px"; // en la seccion "fondo" se altera la propiedad css heigth
   document.getElementById('inferior').style.width = ancho + "px"; // en la seccion "fondo" se altera la propiedad css width 
   document.getElementById('comandos').style.height = altocomandos + "px"; // en la seccion "comandos" se altera la propiedad css heigth
