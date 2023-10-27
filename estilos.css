@@ -60,20 +60,25 @@ height:100vh;
  text-align: center; /*Se centra el contenido*/   
 }
 #modo{
-    font-size: 5vw; /*tamaño de letra*/
-    width: 20%;
+    margin-inline: 5%;
+    font-size: 6vw; /*tamaño de letra*/
+    width: 30%;
+
 }
 #captura{
-    font-size: 5vw; /*tamaño de letra*/   
-    width: 20%;
+    margin-inline: 5%;
+    font-size: 6vw; /*tamaño de letra*/   
+    width: 30%;
 }
 #limpiar{
-    font-size: 5vw; /*tamaño de letra*/
-    width: 20%;
+    margin-inline: 5%;
+    font-size: 6vw; /*tamaño de letra*/
+    width: 30%;
 }
 #guardar{
-    font-size: 5vw; /*tamaño de letra*/
-    width: 20%;
+    margin-inline: 5%;
+    font-size: 6vw; /*tamaño de letra*/
+    width: 30%;
 }
 #final{ /*afecta a la seccion final*/
     font-size:2vw; /*tamaño de letra*/
