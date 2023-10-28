@@ -104,7 +104,7 @@ function modo() {
     cambioCamara = "user";
     console.log("Camara= ",cambioCamara);
     videoconfig = {audio: false,
-      video: { facingMode: cambioCamara, width: ancho, height: altovideo }
+      video: { facingMode: cambioCamara }
     }; navigator.mediaDevices.getUserMedia(videoconfig).then(stream => { 
       video.srcObject = stream,
       canales = stream.getTracks();
