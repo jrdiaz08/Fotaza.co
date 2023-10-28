@@ -15,17 +15,17 @@ height:100vh;
 }
 #fondo{ 
     height:100vh;
-    background-color: green;
+    background-color: black;
 }
 #superior{
     background-color: black;
 }
 #pantalla{  
-    background-color: blue;
+    background-color: black;
 }
 #video{
 
- background-color: yellow;
+ background-color: black;
 }
 #vortice{
     position:absolute;
