@@ -3,7 +3,7 @@ let vortice = document.getElementById("vortice");
 let canales;
 let cambioCamara = "user";
 var videoconfig = {audio: false,
-  video: {facingMode: cambioCamara, autoPlay: true,
+  video: {facingMode: cambioCamara, autoPlay: true, playsInline: true,
  muted: true}
 };
 var alto = window.innerHeight; 
