@@ -1,11 +1,10 @@
-let navigator.getUserMedia = ( navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.mediaDevices.getUserMedia);
 let video = document.getElementById("video");
 let vortice = document.getElementById("vortice");
 let canales;
 let cambioCamara = "user";
 var videoconfig = {audio: false,
-  video: {facingMode: cambioCamara, autoPlay={true},
-playsInline={true}, muted={true} }
+  video: {facingMode: cambioCamara, autoPlay: true,
+playsInline: true, muted: true }
 };
 var alto = window.innerHeight; 
 var ancho = window.innerWidth;
@@ -28,8 +27,7 @@ var lienzo = document.createElement("canvas");
   lienzo.style.zIndex="2";
 
 function startup() {
-
-  navigator.getUserMedia(videoconfig).then(stream => { 
+  navigator.mediaDevices.getUserMedia(videoconfig).then(stream => { 
     video.srcObject = stream,
     canales = stream.getTracks();
     ;
@@ -94,8 +92,8 @@ function modo() {
     cambioCamara = "environment";
     console.log("Camara= ",cambioCamara);
     videoconfig = {audio: false,
-      video: {facingMode: cambioCamara, autoPlay={true},
-playsInline={true}, muted={true} }
+      video: {facingMode: cambioCamara, autoPlay:true,
+playsInline: true, muted: true }
     };  navigator.mediaDevices.getUserMedia(videoconfig).then(stream => { 
       video.srcObject = stream,
       canales = stream.getTracks();
@@ -107,12 +105,13 @@ playsInline={true}, muted={true} }
     cambioCamara = "user";
     console.log("Camara= ",cambioCamara);
     videoconfig = {audio: false,
-      video: {facingMode: cambioCamara, autoPlay={true},
-playsInline={true}, muted={true} }
+      video: {facingMode: cambioCamara, autoPlay:true,
+playsInline: true, muted: true }
     }; navigator.mediaDevices.getUserMedia(videoconfig).then(stream => { 
       video.srcObject = stream,
       canales = stream.getTracks();
       ;
+
     }).catch(console.error)
   }
 };
