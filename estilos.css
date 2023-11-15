@@ -15,21 +15,22 @@ height:100vh;
 }
 #fondo{ 
     height:100vh;
-    background-color: green;
+    background-color: grey;
 }
 #superior{
-    background-color: black;
+    background-color: grey;
 }
 #pantalla{  
-    background-color: blue;
+    background-color: grey;
 }
 #video{
- background-color: yellow;
+
+ background-color: grey;
 }
 #vortice{
     position:absolute;
-top:0px;
-left:0px;
+    top:0px;
+    left:0px;
     z-index:1;
     width: 30%; /*El ancho de la imagen cambia segun el ancho de la pag*/
     padding-top: 0; /*crea un margen interior*/
@@ -41,10 +42,16 @@ left:0px;
     animation-timing-function: linear; /*se declara la velocidad de reporduccion*/
 }
 @keyframes giro {from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}}
-
+    to {transform: rotate(360deg);}
+}
+#lienzo{
+    position:absolute;
+    top:0px;
+    left:0%;
+    z-index:2;
+   }
 #inferior{
-    background-color: black;
+    background-color: grey;
 }
 
 #comandos{
@@ -53,12 +60,25 @@ left:0px;
  text-align: center; /*Se centra el contenido*/   
 }
 #modo{
+    margin-inline: 5%;
     font-size: 6vw; /*tamaño de letra*/
-    width: 40%;
+    width: 30%;
+
 }
 #captura{
+    margin-inline: 5%;
     font-size: 6vw; /*tamaño de letra*/   
-    width: 40%;
+    width: 30%;
+}
+#limpiar{
+    margin-inline: 5%;
+    font-size: 6vw; /*tamaño de letra*/
+    width: 30%;
+}
+#guardar{
+    margin-inline: 5%;
+    font-size: 6vw; /*tamaño de letra*/
+    width: 30%;
 }
 #final{ /*afecta a la seccion final*/
     font-size:2vw; /*tamaño de letra*/
