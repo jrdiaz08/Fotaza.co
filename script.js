@@ -3,8 +3,8 @@ let vortice = document.getElementById("vortice");
 let canales;
 let cambioCamara = "user";
 var videoconfig = {audio: false,
-  video: {facingMode: cambioCamara, autoPlay: true,
-playsInline: true, muted: true }
+  video: {facingMode: cambioCamara, autoPlay: true, playsInline: true,
+ muted: true}
 };
 var alto = window.innerHeight; 
 var ancho = window.innerWidth;
@@ -92,8 +92,8 @@ function modo() {
     cambioCamara = "environment";
     console.log("Camara= ",cambioCamara);
     videoconfig = {audio: false,
-      video: {facingMode: cambioCamara, autoPlay:true,
-playsInline: true, muted: true }
+      video: {facingMode: cambioCamara, autoPlay: true,
+playsInline: true, muted: true}
     };  navigator.mediaDevices.getUserMedia(videoconfig).then(stream => { 
       video.srcObject = stream,
       canales = stream.getTracks();
@@ -105,8 +105,8 @@ playsInline: true, muted: true }
     cambioCamara = "user";
     console.log("Camara= ",cambioCamara);
     videoconfig = {audio: false,
-      video: {facingMode: cambioCamara, autoPlay:true,
-playsInline: true, muted: true }
+      video: {facingMode: cambioCamara, autoPlay: true,
+playsInline: true, muted: true}
     }; navigator.mediaDevices.getUserMedia(videoconfig).then(stream => { 
       video.srcObject = stream,
       canales = stream.getTracks();
