@@ -122,7 +122,7 @@ function capturar() {
   const referencia = document.getElementById("vortice");
   ubicacion.insertBefore(lienzo, referencia);
   var contexto = lienzo.getContext('2d');
-  contexto.drawImage(video, 0, 0, ancho, altopantalla);
+  contexto.drawImage(video, 0.5, 0.5, ancho, altopantalla);
   contexto.drawImage(vortice, centro, 0, (vortice.width), (vortice.height));
   document.getElementById('modo').style.display = "none"; // en la seccion "modo" se altera la propiedad css display
   document.getElementById('captura').style.display = "none"; // en la seccion "limpiar" se altera la propiedad css display
