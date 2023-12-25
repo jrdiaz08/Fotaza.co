@@ -19,8 +19,8 @@ var total = altosuperior+altopantalla+altoinferior+altocomandos+altofinal;
 
 var lienzo = document.createElement("canvas");
   lienzo.id = "lienzo";
-  lienzo.width = video.width;
-  lienzo.height = video.height;
+  lienzo.width = ancho; 
+  lienzo.height = altovideo;
   lienzo.style.position="absolute";
   lienzo.style.top =altosuperior + "px";
   lienzo.style.left="0%";
