@@ -19,8 +19,8 @@ var total = altosuperior+altopantalla+altoinferior+altocomandos+altofinal;
 
 var lienzo = document.createElement("canvas");
   lienzo.id = "lienzo";
-  lienzo.width = ancho;
-  lienzo.height = altovideo;
+  lienzo.width = video.width;
+  lienzo.height = video.height;
   lienzo.style.position="absolute";
   lienzo.style.top =altosuperior + "px";
   lienzo.style.left="0%";
@@ -123,7 +123,7 @@ function capturar() {
   ubicacion.insertBefore(lienzo, referencia);
   var contexto = lienzo.getContext('2d');
   contexto.imageSmoothingEnabled = false;
-  contexto.drawImage(video, 0, 0, ancho, altopantalla);
+  contexto.drawImage(video, 0, 0, (video.width), (video.height));
   contexto.imageSmoothingEnabled = true;
   contexto.drawImage(vortice, centro, 0, (vortice.width), (vortice.height));
   document.getElementById('modo').style.display = "none"; // en la seccion "modo" se altera la propiedad css display
