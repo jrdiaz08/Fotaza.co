@@ -122,11 +122,11 @@ function capturar() {
   const referencia = document.getElementById("vortice");
   ubicacion.insertBefore(lienzo, referencia);
   var contexto = lienzo.getContext('2d');
-  contexto.imageSmoothingEnabled = false;
-  contexto.drawImage(video, 0, 0, ancho, altovideo);
-  contexto.imageSmoothingEnabled = true;
-  contexto.drawImage(vortice, centro, 0, ancho, altovideo);
-
+ // contexto.imageSmoothingEnabled = true;
+  contexto.drawImage(video, 0, 0, parseInt(ancho), parseInt(altovideo));
+ // contexto.imageSmoothingEnabled = true;
+  contexto.drawImage(vortice, centro, 0, (vortice.width), (vortice.height));
+  lienzo.style.backgroundImage = contexto;
   document.getElementById('modo').style.display = "none"; // en la seccion "modo" se altera la propiedad css display
   document.getElementById('captura').style.display = "none"; // en la seccion "limpiar" se altera la propiedad css display
   document.getElementById('limpiar').style.display = "inline-block"; // en la seccion "limpiar" se altera la propiedad css display
