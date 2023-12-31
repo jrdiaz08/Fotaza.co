@@ -27,23 +27,14 @@ height:100vh;
 
  background-color: grey;
 }
-#vortice{
+#titular{
     position:absolute;
     top:0px;
     left:0px;
     z-index:1;
-    width: 30%; /*El ancho de la imagen cambia segun el ancho de la pag*/
+    width: 100vw; /*El ancho de la imagen cambia segun el ancho de la pag*/
     padding-top: 0; /*crea un margen interior*/
-    animation-name: giro; /*se declara una animacion con el nombre de "bordes"*/
-    animation-duration: 6s; /*se declara la duracion de la animacion*/
-    animation-iteration-count: infinite; /*se declara las veces que se reproducira la animacion*/
-    animation-play-state: running; /*se declara si el estado de pausa/play*/
-    animation-direction:reverse; /*se declara el sentido de reproduccion*/
-    animation-timing-function: linear; /*se declara la velocidad de reporduccion*/
-}
-@keyframes giro {from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
-}
+    
 #lienzo{
     position:absolute;
     top:0px;
@@ -61,24 +52,24 @@ height:100vh;
 }
 #modo{
     margin-inline: 5%;
-    font-size: 6vw; /*tamaño de letra*/
-    width: 30%;
+    font-size: 7vw; /*tamaño de letra*/
+    width: 40%;
 
 }
 #captura{
     margin-inline: 5%;
-    font-size: 6vw; /*tamaño de letra*/   
-    width: 30%;
+    font-size: 7vw; /*tamaño de letra*/   
+    width: 40%;
 }
 #limpiar{
     margin-inline: 5%;
-    font-size: 6vw; /*tamaño de letra*/
-    width: 30%;
+    font-size: 7vw; /*tamaño de letra*/
+    width: 40%;
 }
 #guardar{
     margin-inline: 5%;
-    font-size: 6vw; /*tamaño de letra*/
-    width: 30%;
+    font-size: 7vw; /*tamaño de letra*/
+    width: 40%;
 }
 #final{ /*afecta a la seccion final*/
     font-size:2vw; /*tamaño de letra*/
