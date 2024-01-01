@@ -46,30 +46,38 @@ height:100vh;
 }
 
 #comandos{
- margin-top:5vh;
+ margin-top:3vh;
+ margin-bottom:3vh;
  display:inline-block;  
  text-align: center; /*Se centra el contenido*/   
 }
 #modo{
+    background-color: black;
+    border: none;
     margin-inline: 5%;
-    font-size: 7vw; /*tamaño de letra*/
     width: 30%;
-
 }
 #captura{
+    background-color: black;
+    border: none;
     margin-inline: 5%;
-    font-size: 7vw; /*tamaño de letra*/   
     width: 30%;
 }
 #limpiar{
+    background-color: black;
+    border: none;
     margin-inline: 5%;
-    font-size: 7vw; /*tamaño de letra*/
     width: 30%;
 }
 #guardar{
+    background-color: black;
+    border: none;
     margin-inline: 5%;
-    font-size: 7vw; /*tamaño de letra*/
     width: 30%;
+}
+#icono{
+    width: 15vw;
+    height: auto;
 }
 #final{ /*afecta a la seccion final*/
     font-size:2vw; /*tamaño de letra*/
