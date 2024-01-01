@@ -15,17 +15,17 @@ height:100vh;
 }
 #fondo{ 
     height:100vh;
-    background-color: grey;
+    background-color: black;
 }
 #superior{
-    background-color: grey;
+    background-color: black;
 }
 #pantalla{  
-    background-color: grey;
+    background-color: black;
 }
 #video{
 
- background-color: grey;
+ background-color: black;
 }
 #titular{
     position:absolute;
@@ -34,7 +34,7 @@ height:100vh;
     z-index:1;
     width: 100vw; /*El ancho de la imagen cambia segun el ancho de la pag*/
     padding-top: 0; /*crea un margen interior*/
-    
+}    
 #lienzo{
     position:absolute;
     top:0px;
@@ -42,7 +42,7 @@ height:100vh;
     z-index:2;
    }
 #inferior{
-    background-color: grey;
+    background-color: black;
 }
 
 #comandos{
@@ -53,25 +53,26 @@ height:100vh;
 #modo{
     margin-inline: 5%;
     font-size: 7vw; /*tamaño de letra*/
-    width: 40%;
+    width: 30%;
 
 }
 #captura{
     margin-inline: 5%;
     font-size: 7vw; /*tamaño de letra*/   
-    width: 40%;
+    width: 30%;
 }
 #limpiar{
     margin-inline: 5%;
     font-size: 7vw; /*tamaño de letra*/
-    width: 40%;
+    width: 30%;
 }
 #guardar{
     margin-inline: 5%;
     font-size: 7vw; /*tamaño de letra*/
-    width: 40%;
+    width: 30%;
 }
 #final{ /*afecta a la seccion final*/
     font-size:2vw; /*tamaño de letra*/
-    border-top: solid 1px black; /*colorea solo el border superior de la caja*/
+    color: gray;
+    border-top: solid 1px gray; /*colorea solo el border superior de la caja*/
 }
