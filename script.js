@@ -86,6 +86,7 @@ function fecha() { // funcion que extrae la fecha del navegador, codigo descarga
   }
 
 function modo() {
+  document.getElementById('modo').style.transform = "scaleX(-1.3)scaleY(1.3)";
   if(cambioCamara == "user"){
    canales.forEach(track => track.stop())
     cambioCamara = "environment";
@@ -105,18 +106,21 @@ playsInline: true, muted: true}
     console.log("Camara= ",cambioCamara);
     videoconfig = {audio: false,
       video: {facingMode: cambioCamara, autoPlay: true,
-playsInline: true, muted: true}
+      playsInline: true, muted: true}
     }; navigator.mediaDevices.getUserMedia(videoconfig).then(stream => { 
       video.srcObject = stream,
       canales = stream.getTracks();
       ;
-
     }).catch(console.error)
   }
+  setTimeout(pausamodo, 100); 
 };
+function pausamodo(){
+  document.getElementById('modo').style.transform = "scaleX(1)scaleY(1)";
+}
 
 function capturar() {
- 
+  document.getElementById('capturar').style.transform = "scaleX(-1.3)scaleY(1.3)";
   var ubicacion = document.getElementById("pantalla");
   const referencia = document.getElementById("titular");
   ubicacion.insertBefore(lienzo, referencia);
@@ -134,28 +138,46 @@ function capturar() {
   contexto.drawImage(video, 0, 0, parseInt(ancho), parseInt(altovideo));
  // contexto.imageSmoothingEnabled = true;
   contexto.drawImage(titular, 0, 0, (titular.width), (titular.height));
+  setTimeout(pausacapturar, 100); 
+};
+function pausacapturar(){
+  document.getElementById('capturar').style.transform = "scaleX(1)scaleY(1)";
+
   document.getElementById('modo').style.display = "none"; // en la seccion "modo" se altera la propiedad css display
-  document.getElementById('captura').style.display = "none"; // en la seccion "limpiar" se altera la propiedad css display
+  document.getElementById('capturar').style.display = "none"; // en la seccion "limpiar" se altera la propiedad css display
   document.getElementById('limpiar').style.display = "inline-block"; // en la seccion "limpiar" se altera la propiedad css display
   document.getElementById('guardar').style.display = "inline-block"; // en la seccion "guardar" se altera la propiedad css display
-
 };
 
 function limpiar() { 
+ document.getElementById('limpiar').style.transform = "scaleX(-1.3)scaleY(1.3)"; 
+ setTimeout(pausalimpiar, 100); 
+};
+function pausalimpiar(){
+ document.getElementById('limpiar').style.transform = "scaleX(1)scaleY(1)";
  lienzo.width=lienzo.width;
  document.getElementById('limpiar').style.display = "none"; // en la seccion "limpiar" se altera la propiedad css display
  document.getElementById('guardar').style.display = "none"; // en la seccion "guardar" se altera la propiedad css display
  document.getElementById('modo').style.display = "inline-block"; // en la seccion "modo" se altera la propiedad css display
- document.getElementById('captura').style.display = "inline-block"; // en la seccion "capturar" se altera la propiedad css display
-
+ document.getElementById('capturar').style.display = "inline-block"; // en la seccion "capturar" se altera la propiedad css display
 };
 
 function guardar() { 
-let enlace = document.createElement('a');
+  document.getElementById('guardar').style.transform = "scaleX(-1.3)scaleY(1.3)"; 
+  let enlace = document.createElement('a');
       // El título
       enlace.download = Date.now();
       // Convertir la imagen a Base64 y ponerlo en el enlace
       enlace.href = lienzo.toDataURL();
       // Hacer click en él
       enlace.click();
+    setTimeout(pausaguardar, 100); 
 };
+function pausaguardar(){
+  document.getElementById('guardar').style.transform = "scaleX(1)scaleY(1)";
+  lienzo.width=lienzo.width;
+  document.getElementById('limpiar').style.display = "none"; // en la seccion "limpiar" se altera la propiedad css display
+  document.getElementById('guardar').style.display = "none"; // en la seccion "guardar" se altera la propiedad css display
+  document.getElementById('modo').style.display = "inline-block"; // en la seccion "modo" se altera la propiedad css display
+  document.getElementById('capturar').style.display = "inline-block"; // en la seccion "capturar" se altera la propiedad css display
+ };

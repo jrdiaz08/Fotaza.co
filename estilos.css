@@ -56,24 +56,28 @@ height:100vh;
     border: none;
     margin-inline: 5%;
     width: 30%;
+    height: 20vw;
 }
-#captura{
+#capturar{
     background-color: black;
     border: none;
     margin-inline: 5%;
     width: 30%;
+    height: 20vw;
 }
 #limpiar{
     background-color: black;
     border: none;
     margin-inline: 5%;
     width: 30%;
+    height: 20vw;
 }
 #guardar{
     background-color: black;
     border: none;
     margin-inline: 5%;
     width: 30%;
+    height: 20vw;
 }
 #icono{
     width: 15vw;
