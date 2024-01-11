@@ -86,7 +86,7 @@ function fecha() { // funcion que extrae la fecha del navegador, codigo descarga
   }
 
 function modo() {
-  document.getElementById('modo').style.transform = "scaleX(-1.3)scaleY(1.3)";
+  document.getElementById('modo').style.transform = "scaleX(-0.8)scaleY(0.8)";
   if(cambioCamara == "user"){
    canales.forEach(track => track.stop())
     cambioCamara = "environment";
@@ -120,7 +120,7 @@ function pausamodo(){
 }
 
 function capturar() {
-  document.getElementById('capturar').style.transform = "scaleX(-1.3)scaleY(1.3)";
+  document.getElementById('capturar').style.transform = "scaleX(-0.8)scaleY(0.8)";
   var ubicacion = document.getElementById("pantalla");
   const referencia = document.getElementById("titular");
   ubicacion.insertBefore(lienzo, referencia);
@@ -150,7 +150,7 @@ function pausacapturar(){
 };
 
 function limpiar() { 
- document.getElementById('limpiar').style.transform = "scaleX(-1.3)scaleY(1.3)"; 
+ document.getElementById('limpiar').style.transform = "scaleX(-0.8)scaleY(0.8)"; 
  setTimeout(pausalimpiar, 100); 
 };
 function pausalimpiar(){
@@ -163,7 +163,7 @@ function pausalimpiar(){
 };
 
 function guardar() { 
-  document.getElementById('guardar').style.transform = "scaleX(-1.3)scaleY(1.3)"; 
+  document.getElementById('guardar').style.transform = "scaleX(-0.8)scaleY(0.8)"; 
   let enlace = document.createElement('a');
       // El título
       enlace.download = Date.now();
