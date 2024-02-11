@@ -60,12 +60,12 @@ let arranque = Date.now(); // recordar la hora de inicio
     }
     // dibujar la animación en el momento timePassed
     animacion(tiempo);
-  }, 3);
+  }, 20);
   
   // mientras timePassed va de 0 a 2000
   // left obtiene valores de 0px a 400px
   function animacion(tiempo) { 
-    if (1000<=tiempo && tiempo<=1501) {
+    if (1000<=tiempo && tiempo<=1510) {
    Isologo.style.width = (ancho*(tiempo-1000)*0.001)+'px';
    ImagotipoA.style.top = (ancho*-0.065)-((tiempo-1000)*ancho*0.0001) + "px";
    ImagotipoB.style.transform = 'rotate('+(((tiempo-1000)/2.78))+'deg)'
