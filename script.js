@@ -73,7 +73,9 @@ let arranque = Date.now(); // recordar la hora de inicio
   } 
 }
 setTimeout(function () { // se ejecuta la funcion una vez se carga la pagina, con un retraso definido
-  document.getElementById('loader').style.transform="scale(0)"; // en la seccion loader se altera la propiedad css escala   
+  document.getElementById('loader').style.transform="scale(0)";
+  document.getElementById('fondo').style.transform="scale(1)";
+   // en la seccion loader se altera la propiedad css escala   
  },2500); // el retraso definido en milisegundos
 
 }

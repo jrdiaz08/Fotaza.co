@@ -17,6 +17,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
    
 }
 #orientacion{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
+    transform: scale(0);
     width: 100%; /*se toma como ancho de seccion todo el contenido*/
     height: 100%;/*se toma como alto de seccion todo el contenido*/
     background: rgb(0, 0, 0); /*color de fondo*/
@@ -45,6 +46,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
     justify-content: center;
 }
 #fondo{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
+    transform: scale(0);
     width: 100%; /*se toma como ancho de seccion todo el contenido*/
     height: 100%;/*se toma como alto de seccion todo el contenido*/
     background: rgb(0, 0, 0); /*color de fondo*/
