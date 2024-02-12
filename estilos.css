@@ -56,7 +56,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
     align-items: center;
     justify-content: center;
     animation-name: fondo; /*se declara una animacion con el nombre de "fondo"*/
-    animation-duration: 30s; /*se declara la duracion de la animacion*/
+    animation-duration: 60s; /*se declara la duracion de la animacion*/
     animation-iteration-count: infinite; /*se declara las veces que se reproducira la animacion*/
     animation-play-state: running; /*se declara si el estado de pausa/play*/
     animation-direction: alternate-reverse; /*se declara el sentido de reproduccion*/
@@ -103,7 +103,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
     right: 14vw; 
     z-index: 0;
 }
-#centrador1{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
+#centrador2{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
     position: relative;
 }
 #fotaza{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
@@ -139,3 +139,83 @@ margin-bottom: 2vh;
     color: rgb(0, 0, 0); /*define el color de fuente*/
     background:transparent; /*define el color de fondo*/
 }
+
+
+#centradorpantalla{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
+    position: relative;
+    width: 100vw; /*se toma como ancho de seccion todo el contenido*/
+    height: 80vh;/*se toma como alto de seccion todo el contenido*/
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border: solid;
+    border-radius: 3vw; /*redondea los bordes de la caja*/
+    border-color: rgb(255, 217, 102);  
+}   
+#pantalla{  
+    background: rgba(0, 0, 0); /*color de fondo*/
+    position: relative;
+    width: 98vw; /*se toma como ancho de seccion todo el contenido*/
+    height: 50vh;/*se toma como alto de seccion todo el contenido*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid;
+    border-radius: 3vw; /*redondea los bordes de la caja*/
+    border-color: rgb(128, 102, 255);  
+}
+#video{
+    background: rgba(0, 0, 0); /*color de fondo*/
+}
+#titular{
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index:1;
+    width: 100vw; /*El ancho de la imagen cambia segun el ancho de la pag*/
+    padding-top: 0; /*crea un margen interior*/
+} 
+
+#comandos{
+    margin-top:3vh;
+    margin-bottom:3vh;
+    display:inline-block;  
+    text-align: center; /*Se centra el contenido*/   
+   }
+   #modo{
+       background-color: transparent;
+       border: none;
+       margin-inline: 5%;
+       width: 30%;
+       height: 20vw;
+   }
+   #capturar{
+       background-color: transparent;
+       border: none;
+       margin-inline: 5%;
+       width: 30%;
+       height: 20vw;
+   }
+   #limpiar{
+       background-color: transparent;
+       border: none;
+       margin-inline: 5%;
+       width: 30%;
+       height: 20vw;
+   }
+   #guardar{
+       background-color: transparent;
+       border: none;
+       margin-inline: 5%;
+       width: 30%;
+       height: 20vw;
+   }
+   #icono{
+       width: 15vw;
+       height: auto;
+   }
+   #final{ /*afecta a la seccion final*/
+       font-size:2vw; /*tamaño de letra*/
+       color: gray;
+       border-top: solid 1px gray; /*colorea solo el border superior de la caja*/
+   }

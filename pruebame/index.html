@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>App Fotaza.co</title>
+
+        <meta name="descripcion" content="Interfaz inicial">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        
+        <link rel="stylesheet" href="../estilos.css"> 
+        <script async src="../script.js" type="text/javascript"></script>       
+</head>
+
+<body>
+    <section id="orientacion">
+        <div id="horizontal">
+            <img src="../Fallo.png" alt="Fallo" id="Fallo">
+        </div>
+    </section>
+    <section id="loader" >
+        <div id="centrador1">
+            <div id="ImagotipoA">
+                <img src="../Isotipo.png" alt="IsotipoA" id="IsotipoA">
+            </div>
+            <div id="ImagotipoC">
+                <img src="../Isologo.png" alt="Isologo" id="Isologo">
+            </div>
+            <div id="ImagotipoB">
+                <img src="../Isotipo.png" alt="IsotipoB" id="IsotipoB">
+            </div>
+        </div>
+    </section> 
+
+
+  <section id="fondo">
+    <div id="centradorpantalla">
+        <div id="pantalla">
+        <video id="video" autoplay playsinline> video no disponible 
+        </video>
+        <img src="titular0.png" id="titular"/>
+        </div>
+         <div id="comandos">
+        <button class="" id="modo" onclick="modo()">
+            <img src="modo.png" id="icono"></button>
+        <button class="" id="capturar" onclick="capturar()">
+            <img src="capturar.png" id="icono"></button> 
+        <button class="" id="limpiar" onclick="limpiar()">
+            <img src="limpiar.png" id="icono"></button> 
+        <button class="" id="guardar" onclick="guardar()">
+            <img src="guardar.png"id="icono"></button>  
+        </div>
+        <div id="final">
+        Fotaza.co 2024 ♦ Creado por: Jose Diaz ♦
+        </div>
+    </div>
+        
+</section>    
+</body>
+</html>
