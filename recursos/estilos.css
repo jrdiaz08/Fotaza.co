@@ -1,0 +1,221 @@
+*{ /*afecta a todo el documento*/
+    overflow: hidden; /*evita el scroll hacia abajo*/
+    margin: 0px ; /*distancia de margenes exteriores*/
+    padding: 0px; /*distancia de margenes interiores*/    
+    text-align: center; /*Se centra el contenido*/  
+}
+
+@font-face{ /*carga una fuente personalizada desde un archivo*/
+    font-family: "fuente"; /*se declara el nombre de la fuente*/
+    src: url(fotazafont.ttf); /*se selecciona el archivo de la fuente*/
+}
+
+html, body { /*afecta a todo el cuerpo del documento*/
+    height:100vh;
+    font-family: "fuente"; /*estilo de letra*/
+    background: rgb(0, 0, 0); /*color de fondo*/    
+   
+}
+#orientacion{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
+    transform: scale(0);
+    width: 100%; /*se toma como ancho de seccion todo el contenido*/
+    height: 100%;/*se toma como alto de seccion todo el contenido*/
+    background: rgb(0, 0, 0); /*color de fondo*/
+    position: absolute; /*sobrepone la seccion orientacion para tapar el resto del contenido*/  
+    z-index: 2;  
+}
+#horizontal{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
+    width: 100%; /*se toma como ancho de seccion todo el contenido*/
+    height: 100%;/*se toma como alto de seccion todo el contenido*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#loader{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
+    width: 100%; /*se toma como ancho de seccion todo el contenido*/
+    height: 100%;/*se toma como alto de seccion todo el contenido*/
+    background: rgb(0, 0, 0); /*color de fondo*/
+    position: fixed; /*sobrepone la seccion loader para tapar el resto del contenido*/
+    z-index: 1;
+}
+#centrador1{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
+    width: 100%; /*se toma como ancho de seccion todo el contenido*/
+    height: 100%;/*se toma como alto de seccion todo el contenido*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#fondo{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
+    transform: scale(0);
+    width: 100%; /*se toma como ancho de seccion todo el contenido*/
+    height: 100%;/*se toma como alto de seccion todo el contenido*/
+    background: rgb(0, 0, 0); /*color de fondo*/
+    background-size:35vw;
+    position: static; /*Se posiciona en la ultima parte de atras*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: fondo; /*se declara una animacion con el nombre de "fondo"*/
+    animation-duration: 60s; /*se declara la duracion de la animacion*/
+    animation-iteration-count: infinite; /*se declara las veces que se reproducira la animacion*/
+    animation-play-state: running; /*se declara si el estado de pausa/play*/
+    animation-direction: alternate-reverse; /*se declara el sentido de reproduccion*/
+    animation-timing-function: linear;/*se declara la velocidad de reporduccion*/
+}
+@keyframes fondo { /*se ejecuta la animacion de nombre "fondo"*/
+    0%{
+        background-image: url(fondoDinamico.png); /*carga la imagen BackGround*/
+        background-position-x: Center; /*desplaza el fondo en el eje x*/
+        background-position-y: bottom; /*desplaza el fondo en el eje y*/
+    }
+    50% {background-image: url(fondoDinamico.png); /*carga la imagen BackGround*/
+        background-position-x: left; /*desplaza el fondo en el eje x*/
+        background-position-y: center; /*desplaza el fondo en el eje y*/
+    }
+   100%{ background-image: url(fondoDinamico.png); /*carga la imagen BackGround*/
+        background-position-x: center; /*desplaza el fondo en el eje x*/
+        background-position-y: top; /*desplaza el fondo en el eje y*/
+    }
+}
+#menu{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
+    width: 70vw; /*se toma como ancho de seccion todo el contenido*/
+    height: 80vh;/*se toma como alto de seccion todo el contenido*/
+    background: rgba(0, 0, 0); /*color de fondo*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid;
+    border-radius: 6vw; /*redondea los bordes de la caja*/
+    border-color: rgb(255, 217, 102);  
+}
+#esquinaSup{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
+    width: 15vw;
+    position: absolute; /*Se posiciona en la ultima parte de atras*/
+    top: 9.5vh;
+    left: 14vw; 
+    z-index: 0;
+}
+#esquinaInf{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
+    width: 15vw;
+    position: absolute; /*Se posiciona en la ultima parte de atras*/
+    rotate: 180deg;
+    bottom: 9.5vh;
+    right: 14vw; 
+    z-index: 0;
+}
+#centrador2{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
+    position: relative;
+}
+#fotaza{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
+    margin-bottom: 2vh;
+    width: 55vw;
+}
+.opciones{ /*afecta a la seccion img*/
+    font-family: "fuente"; /*estilo de letra*/ 
+    background: rgb(255, 217, 102); /*Define el color de fondo de los botones*/
+    padding: 1vh; /*define un margen interior de 4px*/
+    font-size: 8vw; /*tamaño de letra ue se ajusta al ancho de la pag*/
+    margin-top: 2vh; /*margen en las cajas de opciones*/
+    margin-bottom: 2vh; /*margen en las cajas de opciones*/
+    margin-left: 1vh;
+    margin-right: 1vh;
+    border-radius: 2vh; /*redondea los bordes de la caja*/
+    border: none; /*define el grosor del borde*/
+    width: 30vw;
+    box-shadow: 1px 1px 0px rgba(127, 91, 0, 1),
+    2px 2px 0px rgba(127, 91, 0, 0.9),
+    3px 3px 0px rgba(127, 91, 0, 0.8),
+    4px 4px 0px rgba(127, 91, 0, 0.7),
+    5px 5px 0px rgba(127, 91, 0, 0.6),
+    0px 6px 0px rgba(127, 91, 0, 0.5),
+    0px 7px 0px rgba(127, 91, 0, 0.4),
+    0px 8px 0px rgba(127, 91, 0, 0.3),
+    0px 9px 0px rgba(127, 91, 0, 0.2),  
+    0px 10px 0px rgba(127, 91, 0, 0.1);
+}
+.link{ /*afecta a la seccion link*/
+    font-family: "fuente"; /*define el tipo de fuente*/
+    text-decoration: none; /*le quita el subrayado al link*/
+    color: rgb(0, 0, 0); /*define el color de fuente*/
+    background:transparent; /*define el color de fondo*/
+}
+
+
+#centradorpantalla{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
+    position: relative;
+    width: 100vw; /*se toma como ancho de seccion todo el contenido*/
+    height: 80vh;/*se toma como alto de seccion todo el contenido*/
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border: solid;
+    border-radius: 3vw; /*redondea los bordes de la caja*/
+    border-color: rgb(255, 217, 102);  
+}   
+#pantalla{  
+    background: rgba(0, 0, 0); /*color de fondo*/
+    position: relative;
+    width: 98vw; /*se toma como ancho de seccion todo el contenido*/
+    height: 50vh;/*se toma como alto de seccion todo el contenido*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid;
+    border-radius: 3vw; /*redondea los bordes de la caja*/
+    border-color: rgb(128, 102, 255);  
+}
+#video{
+    background: rgba(0, 0, 0); /*color de fondo*/
+}
+#titular{
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index:1;
+    width: 100vw; /*El ancho de la imagen cambia segun el ancho de la pag*/
+    padding-top: 0; /*crea un margen interior*/
+} 
+
+#comandos{
+    margin-top:3vh;
+    margin-bottom:3vh;
+    display:inline-block;  
+    text-align: center; /*Se centra el contenido*/   
+   }
+   #modo{
+       background-color: transparent;
+       border: none;
+       margin-inline: 5%;
+       width: 30%;
+       height: 20vw;
+   }
+   #capturar{
+       background-color: transparent;
+       border: none;
+       margin-inline: 5%;
+       width: 30%;
+       height: 20vw;
+   }
+   #limpiar{
+       background-color: transparent;
+       border: none;
+       margin-inline: 5%;
+       width: 30%;
+       height: 20vw;
+   }
+   #guardar{
+       background-color: transparent;
+       border: none;
+       margin-inline: 5%;
+       width: 30%;
+       height: 20vw;
+   }
+   #icono{
+       width: 15vw;
+       height: auto;
+   }
+   #final{ /*afecta a la seccion final*/
+       font-size:2vw; /*tamaño de letra*/
+       color: gray;
+       border-top: solid 1px gray; /*colorea solo el border superior de la caja*/
+   }
