@@ -79,5 +79,41 @@ setTimeout(function () { // se ejecuta la funcion una vez se carga la pagina, co
  },2500); // el retraso definido en milisegundos
 
  };
- 
+ window.onresize = function() {
+  var alto = window.innerHeight; 
+  var ancho = window.innerWidth;
+    
+  let fallo = document.getElementById("fallo");
+  
+  let isotipoA = document.getElementById("isotipoA");
+  let isotipoB = document.getElementById("isotipoB");
+  let isologo= document.getElementById("isologo");
+  let imagotipoA = document.getElementById("imagotipoA");
+  let imagotipoB = document.getElementById("imagotipoB");
+      
+  console.log("alto= ",alto);
+  console.log("ancho= ",ancho);
+    
+  fallo.style.width = (ancho*0.5) + "px"; // en la seccion "fondo" se altera la propiedad css width
+  
+  isotipoA.style.width = (ancho*0.15) + "px"; // en la seccion "fondo" se altera la propiedad css width
+  imagotipoA.style.position ="relative"; // en la seccion "fondo" se altera la propiedad css width
+  imagotipoA.style.top = (ancho*-0.070) + "px"; // en la seccion "fondo" se altera la propiedad css width
+  imagotipoA.style.left= (ancho*0.075) + "px";
+
+  isologo.style.width = (0) + "px"; // en la seccion "fondo" se altera la propiedad css heigth
+
+  isotipoB.style.width = (ancho*0.15) + "px"; // en la seccion "fondo" se altera la propiedad css width
+  imagotipoB.style.position ="relative"; // en la seccion "fondo" se altera la propiedad css width
+  imagotipoB.style.top = (ancho*0.070) + "px"; // en la seccion "fondo" se altera la propiedad css width
+  imagotipoB.style.right= (ancho*0.075) + "px";
+
+  if (alto>ancho){ // condicional que se cumple si...
+    document.getElementById('orientacion').style.transform="scale(0)";
+        
+  }else{ // condicional que se cumple si...
+    document.getElementById('orientacion').style.transform="scale(1)";
+  }
+} 
+
 
