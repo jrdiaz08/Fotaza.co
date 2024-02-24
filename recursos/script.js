@@ -54,7 +54,7 @@ document.body.onload = function inicio() {
 let arranque = Date.now(); // recordar la hora de inicio
   let cronometro = setInterval(function() {
     let tiempo = Date.now() - arranque; // ¿Cuánto tiempo pasó desde el principio?
-    if (tiempo >= 2000) {
+    if (tiempo >= 2500) {
       clearInterval(cronometro); // terminar la animación después de 2 segundos
       return;
     }
@@ -70,6 +70,12 @@ let arranque = Date.now(); // recordar la hora de inicio
    imagotipoA.style.top = (ancho*-0.065)-((tiempo-1000)*ancho*0.0001) + "px";
    imagotipoB.style.transform = 'rotate('+(((tiempo-1000)/2.78))+'deg)'
    imagotipoB.style.top = (ancho*0.065)+((tiempo-1000)*ancho*0.00006) + "px";
+  } 
+  if (2000<=tiempo && tiempo<=2400) {
+    console.log("tiempo",tiempo);
+    isologo.style.opacity = 1-((tiempo-1999)/400);
+    imagotipoA.style.opacity =1-((tiempo-1999)/400);
+    imagotipoB.style.opacity =1-((tiempo-1999)/400);
   } 
 }
 setTimeout(function () { // se ejecuta la funcion una vez se carga la pagina, con un retraso definido
