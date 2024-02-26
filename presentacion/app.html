@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>App muestra Fotaza.co</title>
+        <title>App ejemplo Fotaza.co</title>
 
         <meta name="descripcion" content="Interfaz inicial">
         <meta charset="UTF-8">
@@ -37,28 +37,31 @@
     </section> 
 
 
-  <section id="fondo">
-    <div id="centradorpantalla">
-        <div id="pantalla">
-        <video id="video" autoplay playsinline> video no disponible 
-        </video>
-        <img src="titular0.png" id="titular"/>
+    <section id="fondo">
+        <div id="filtro">
+            <div id="superior">
+            </div>
+            <div id="pantalla">
+                <video id="video" autoplay playsinline> video no disponible 
+                </video>
+                <img src="titular0.png" id="titular"/>
+            </div>
+            <div id="inferior">
+            </div>
+            <div id="comandos">
+                <button class="" id="modo" onclick="modo()">
+                    <img src="../recursos/modo.png" id="icono"></button>
+                <button class="" id="captura" onclick="capturar()">
+                    <img src="../recursos/capturar.png" id="icono"></button> 
+                <button class="" id="limpiar" onclick="limpiar()">
+                    <img src="../recursos/limpiar.png" id="icono"></button> 
+                <button class="" id="guardar" onclick="guardar()">
+                    <img src="../recursos/guardar.png"id="icono"></button>  
+                </div>
+            <div id="final" >
+                <a class="link2" href="../index.html">Fotaza.co</a>
+            </div>
         </div>
-         <div id="comandos">
-        <button class="" id="modo" onclick="modo()">
-            <img src="../recursos/modo.png" id="icono"></button>
-        <button class="" id="capturar" onclick="capturar()">
-            <img src="../recursos/capturar.png" id="icono"></button> 
-        <button class="" id="limpiar" onclick="limpiar()">
-            <img src="../recursos/limpiar.png" id="icono"></button> 
-        <button class="" id="guardar" onclick="guardar()">
-            <img src="../recursos/guardar.png"id="icono"></button>  
-        </div>
-        <div id="final">
-        Fotaza.co 2024 ♦ Creado por: Jose Diaz ♦
-        </div>
-    </div>
-        
-</section>    
+    </section>    
 </body>
 </html>

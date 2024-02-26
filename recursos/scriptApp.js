@@ -1,5 +1,5 @@
 let video = document.getElementById("video");
-let vortice = document.getElementById("vortice");
+let titular = document.getElementById("titular");
 let canales;
 let cambioCamara = "user";
 var videoconfig = {audio: false,
@@ -14,7 +14,7 @@ var altopantalla = ancho*1.33;
 var altovideo = ancho*1.33;
 var altosuperior = (alto-altopantalla-altocomandos-altofinal)/2;
 var altoinferior = (alto-altopantalla-altocomandos-altofinal)/2;
-var centro = (ancho-(ancho*0.3))/2;
+
 var total = altosuperior+altopantalla+altoinferior+altocomandos+altofinal;
 
 var lienzo = document.createElement("canvas");
@@ -63,28 +63,12 @@ function startup() {
   document.getElementById('final').style.height = altofinal + "px"; // en la seccion "final" se altera la propiedad css heigth
   document.getElementById('final').style.width = ancho + "px"; // en la seccion "final" se altera la propiedad css width 
   
-  document.getElementById('vortice').style.top = altosuperior + "px"; // en la seccion "final" se altera la propiedad css heigth
-  document.getElementById('vortice').style.left = centro + "px"; // en la seccion "final" se altera la propiedad css width 
+  document.getElementById('titular').style.top = altosuperior + "px"; // en la seccion "final" se altera la propiedad css heigth
 
 }
   
   window.addEventListener('load',startup, false);
 
-function fecha() { // funcion que extrae la fecha del navegador, codigo descargado
-  var hoy = new Date();
-  var m = new Array();
-  var d = new Array();
-  var an= hoy.getFullYear();
-  m[0]="Enero";  m[1]="Febrero";  m[2]="Marzo";
-  m[3]="Abril";   m[4]="Mayo";  m[5]="Junio";
-  m[6]="Julio";    m[7]="Agosto";   m[8]="Septiembre";
-  m[9]="Octubre";   m[10]="Noviembre"; m[11]="Diciembre";
-  document.write(hoy.getDate());
-  document.write(" de ");
-  document.write(m[hoy.getMonth()]);
-  document.write(" ");
-  document.write(hoy.getFullYear());   
-  }
 
 function modo() {
   if(cambioCamara == "user"){
@@ -119,11 +103,11 @@ playsInline: true, muted: true}
 function capturar() {
  
   var ubicacion = document.getElementById("pantalla");
-  const referencia = document.getElementById("vortice");
+  const referencia = document.getElementById("titular");
   ubicacion.insertBefore(lienzo, referencia);
   var contexto = lienzo.getContext('2d');
   contexto.drawImage(video, 0.5, 0.5, ancho, altopantalla);
- contexto.drawImage(vortice, centro, 0, (vortice.width), (vortice.height));
+ contexto.drawImage(titular, 0, 0, (titular.width), (titular.height));
   document.getElementById('modo').style.display = "none"; // en la seccion "modo" se altera la propiedad css display
   document.getElementById('captura').style.display = "none"; // en la seccion "limpiar" se altera la propiedad css display
   document.getElementById('limpiar').style.display = "inline-block"; // en la seccion "limpiar" se altera la propiedad css display

@@ -72,7 +72,6 @@ let arranque = Date.now(); // recordar la hora de inicio
    imagotipoB.style.top = (ancho*0.065)+((tiempo-1000)*ancho*0.00006) + "px";
   } 
   if (2000<=tiempo && tiempo<=2400) {
-    console.log("tiempo",tiempo);
     isologo.style.opacity = 1-((tiempo-1999)/400);
     imagotipoA.style.opacity =1-((tiempo-1999)/400);
     imagotipoB.style.opacity =1-((tiempo-1999)/400);

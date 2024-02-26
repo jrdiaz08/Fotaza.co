@@ -133,36 +133,34 @@ html, body { /*afecta a todo el cuerpo del documento*/
     0px 9px 0px rgba(127, 91, 0, 0.2),  
     0px 10px 0px rgba(127, 91, 0, 0.1);
 }
-.link{ /*afecta a la seccion link*/
+.link1{ /*afecta a la seccion link*/
     font-family: "fuente"; /*define el tipo de fuente*/
     text-decoration: none; /*le quita el subrayado al link*/
     color: rgb(0, 0, 0); /*define el color de fuente*/
     background:transparent; /*define el color de fondo*/
 }
+.link2{ /*afecta a la seccion link*/
+    font-family: "fuente"; /*define el tipo de fuente*/
+    text-decoration: none; /*le quita el subrayado al link*/
+    color: rgb(255, 217, 102); /*define el color de fuente*/
+    background:transparent; /*define el color de fondo*/
+}
 
 
-#centradorpantalla{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
-    position: relative;
-    width: 100vw; /*se toma como ancho de seccion todo el contenido*/
-    height: 80vh;/*se toma como alto de seccion todo el contenido*/
-    display: block;
-    align-items: center;
-    justify-content: center;
-    border: solid;
-    border-radius: 3vw; /*redondea los bordes de la caja*/
-    border-color: rgb(255, 217, 102);  
-}   
+#filtro{
+ width: 100vw;
+ height: 100vh;
+ display: block;  
+ background: rgba(0, 0, 0, 0.5);
+}
+
+#superior{
+    background-color:transparent;
+}  
 #pantalla{  
-    background: rgba(0, 0, 0); /*color de fondo*/
-    position: relative;
-    width: 98vw; /*se toma como ancho de seccion todo el contenido*/
-    height: 50vh;/*se toma como alto de seccion todo el contenido*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border: solid;
     border-radius: 3vw; /*redondea los bordes de la caja*/
-    border-color: rgb(128, 102, 255);  
+    border-color:  rgb(255, 217, 102);  
 }
 #video{
     background: rgba(0, 0, 0); /*color de fondo*/
@@ -176,46 +174,57 @@ html, body { /*afecta a todo el cuerpo del documento*/
     padding-top: 0; /*crea un margen interior*/
 } 
 
+#lienzo{
+    position:absolute;
+    top:0px;
+    left:0%;
+    z-index:2;
+}
+
+#inferior{
+    background-color:transparent;
+}
 #comandos{
+
     margin-top:3vh;
     margin-bottom:3vh;
     display:inline-block;  
     text-align: center; /*Se centra el contenido*/   
    }
-   #modo{
-       background-color: transparent;
-       border: none;
-       margin-inline: 5%;
-       width: 30%;
-       height: 20vw;
-   }
-   #capturar{
-       background-color: transparent;
-       border: none;
-       margin-inline: 5%;
-       width: 30%;
-       height: 20vw;
-   }
-   #limpiar{
-       background-color: transparent;
-       border: none;
-       margin-inline: 5%;
-       width: 30%;
-       height: 20vw;
-   }
-   #guardar{
-       background-color: transparent;
-       border: none;
-       margin-inline: 5%;
-       width: 30%;
-       height: 20vw;
-   }
-   #icono{
-       width: 15vw;
-       height: auto;
-   }
-   #final{ /*afecta a la seccion final*/
-       font-size:2vw; /*tamaño de letra*/
-       color: gray;
-       border-top: solid 1px gray; /*colorea solo el border superior de la caja*/
-   }
+#modo{
+    background-color: transparent;
+    border: none;
+    margin-inline: 5%;
+    width: 30%;
+    height: 20vw;
+}
+#captura{
+    background-color: transparent;
+    border: none;
+    margin-inline: 5%;
+    width: 30%;
+    height: 20vw;
+}
+#limpiar{
+    background-color: transparent;
+    border: none;
+    margin-inline: 5%;
+    width: 30%;
+    height: 20vw;
+}
+#guardar{
+    background-color: transparent;
+    border: none;
+    margin-inline: 5%;
+    width: 30%;
+    height: 20vw;
+}
+#icono{
+    width: 15vw;
+    height: auto;
+}
+#final{ /*afecta a la seccion final*/
+    background-color: black;
+    font-size:3vh; /*tamaño de letra*/
+    border-top: solid rgb(255, 217, 102); /*colorea solo el border superior de la caja*/  
+}
