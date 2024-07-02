@@ -9,7 +9,7 @@ var videoconfig = {audio: false,
 var alto = window.innerHeight; 
 var ancho = window.innerWidth;
 var altocomandos = alto*0.1;
-var altofinal = alto*0.1;
+var altofinal = alto*0.05;
 var altopantalla = ancho*1.33;
 var altovideo = ancho*1.33;
 var altosuperior = (alto-altopantalla-altocomandos-altofinal)/2;
@@ -22,7 +22,7 @@ var lienzo = document.createElement("canvas");
   lienzo.width = ancho;
   lienzo.height = altovideo;
   lienzo.style.position="absolute";
-  lienzo.style.top =altosuperior + "px";
+  lienzo.style.top ="0%";
   lienzo.style.left="0%";
   lienzo.style.zIndex="2";
 
@@ -71,6 +71,7 @@ function startup() {
 
 
 function modo() {
+  document.getElementById('modo').style.transform = "scaleX(-0.8)scaleY(0.8)";
   if(cambioCamara == "user"){
    canales.forEach(track => track.stop())
     cambioCamara = "environment";
@@ -98,33 +99,59 @@ playsInline: true, muted: true}
 
     }).catch(console.error)
   }
+  setTimeout(pausamodo, 100); 
 };
+function pausamodo(){
+  document.getElementById('modo').style.transform = "scaleX(1)scaleY(1)";
+}
 
-function capturar() {
- 
+
+function captura() {
+  document.getElementById('captura').style.transform = "scaleX(-0.8)scaleY(0.8)";
   var ubicacion = document.getElementById("pantalla");
   const referencia = document.getElementById("titular");
   ubicacion.insertBefore(lienzo, referencia);
   var contexto = lienzo.getContext('2d');
-  contexto.drawImage(video, 0.5, 0.5, ancho, altopantalla);
- contexto.drawImage(titular, 0, 0, (titular.width), (titular.height));
+  
+  const densidadpixeles = window.devicePixelRatio;
+  const posicion = lienzo.getBoundingClientRect();
+  lienzo.width = posicion.width *densidadpixeles;
+  lienzo.height = posicion.height *densidadpixeles;
+  contexto.scale(densidadpixeles, densidadpixeles);
+  lienzo.style.width = `${posicion.width}px`;
+  lienzo.style.height = `${posicion.height}px`;
+  
+  contexto.imageSmoothingEnabled = true;
+  contexto.drawImage(video, 0, 0, parseInt(ancho), parseInt(altovideo));
+ // contexto.imageSmoothingEnabled = true;
+  contexto.drawImage(titular, 0, 0, (titular.width), (titular.height));
+  setTimeout(pausacapturar, 100); 
+};
+function pausacapturar(){
+  document.getElementById('captura').style.transform = "scaleX(1)scaleY(1)";
+
   document.getElementById('modo').style.display = "none"; // en la seccion "modo" se altera la propiedad css display
   document.getElementById('captura').style.display = "none"; // en la seccion "limpiar" se altera la propiedad css display
   document.getElementById('limpiar').style.display = "inline-block"; // en la seccion "limpiar" se altera la propiedad css display
   document.getElementById('guardar').style.display = "inline-block"; // en la seccion "guardar" se altera la propiedad css display
-
 };
+
 
 function limpiar() { 
- lienzo.width=lienzo.width;
- document.getElementById('limpiar').style.display = "none"; // en la seccion "limpiar" se altera la propiedad css display
- document.getElementById('guardar').style.display = "none"; // en la seccion "guardar" se altera la propiedad css display
- document.getElementById('modo').style.display = "inline-block"; // en la seccion "modo" se altera la propiedad css display
- document.getElementById('captura').style.display = "inline-block"; // en la seccion "capturar" se altera la propiedad css display
+  document.getElementById('limpiar').style.transform = "scaleX(-0.8)scaleY(0.8)"; 
+  setTimeout(pausalimpiar, 100); 
+ };
+ function pausalimpiar(){
+  document.getElementById('limpiar').style.transform = "scaleX(1)scaleY(1)";
+  lienzo.width=lienzo.width;
+  document.getElementById('limpiar').style.display = "none"; // en la seccion "limpiar" se altera la propiedad css display
+  document.getElementById('guardar').style.display = "none"; // en la seccion "guardar" se altera la propiedad css display
+  document.getElementById('modo').style.display = "inline-block"; // en la seccion "modo" se altera la propiedad css display
+  document.getElementById('captura').style.display = "inline-block"; // en la seccion "capturar" se altera la propiedad css display
+ };
 
-};
-
-function guardar() { 
+function guardar() {
+  document.getElementById('guardar').style.transform = "scaleX(-0.8)scaleY(0.8)";  
 let enlace = document.createElement('a');
       // El título
       enlace.download = Date.now();
@@ -132,4 +159,13 @@ let enlace = document.createElement('a');
       enlace.href = lienzo.toDataURL();
       // Hacer click en él
       enlace.click();
+  setTimeout(pausaguardar, 100); 
 };
+function pausaguardar(){
+  document.getElementById('guardar').style.transform = "scaleX(1)scaleY(1)";
+  lienzo.width=lienzo.width;
+  document.getElementById('limpiar').style.display = "none"; // en la seccion "limpiar" se altera la propiedad css display
+  document.getElementById('guardar').style.display = "none"; // en la seccion "guardar" se altera la propiedad css display
+  document.getElementById('modo').style.display = "inline-block"; // en la seccion "modo" se altera la propiedad css display
+  document.getElementById('captura').style.display = "inline-block"; // en la seccion "capturar" se altera la propiedad css display
+ };

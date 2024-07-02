@@ -18,37 +18,38 @@ html, body { /*afecta a todo el cuerpo del documento*/
 }
 #orientacion{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
     transform: scale(0);
-    width: 100%; /*se toma como ancho de seccion todo el contenido*/
-    height: 100%;/*se toma como alto de seccion todo el contenido*/
+    width: 100vw; /*se toma como ancho de seccion todo el contenido*/
+    height: 100vh;/*se toma como alto de seccion todo el contenido*/
     background: rgb(0, 0, 0); /*color de fondo*/
     position: absolute; /*sobrepone la seccion orientacion para tapar el resto del contenido*/  
     z-index: 2;  
 }
 #horizontal{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
-    width: 100%; /*se toma como ancho de seccion todo el contenido*/
-    height: 100%;/*se toma como alto de seccion todo el contenido*/
+    width: 100vw; /*se toma como ancho de seccion todo el contenido*/
+    height: 100vh;/*se toma como alto de seccion todo el contenido*/
     display: flex;
     align-items: center;
     justify-content: center;
 }
 #loader{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
-    width: 100%; /*se toma como ancho de seccion todo el contenido*/
-    height: 100%;/*se toma como alto de seccion todo el contenido*/
+    width: 100vw; /*se toma como ancho de seccion todo el contenido*/
+    height: 100vh;/*se toma como alto de seccion todo el contenido*/
     background: rgb(0, 0, 0); /*color de fondo*/
     position: fixed; /*sobrepone la seccion loader para tapar el resto del contenido*/
     z-index: 1;
 }
 #centrador1{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
-    width: 100%; /*se toma como ancho de seccion todo el contenido*/
-    height: 100%;/*se toma como alto de seccion todo el contenido*/
+    width: 100vw; /*se toma como ancho de seccion todo el contenido*/
+    height: 100vh;/*se toma como alto de seccion todo el contenido*/
     display: flex;
     align-items: center;
     justify-content: center;
 }
 #fondo{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
     transform: scale(0);
-    width: 100%; /*se toma como ancho de seccion todo el contenido*/
-    height: 100%;/*se toma como alto de seccion todo el contenido*/
+    width: 100vw; /*se toma como ancho de seccion todo el contenido*/
+    height: 100vh;/*se toma como alto de seccion todo el contenido*/
+    border: none;
     background: rgb(0, 0, 0); /*color de fondo*/
     background-size:35vw;
     position: static; /*Se posiciona en la ultima parte de atras*/
@@ -81,26 +82,29 @@ html, body { /*afecta a todo el cuerpo del documento*/
     width: 70vw; /*se toma como ancho de seccion todo el contenido*/
     height: 80vh;/*se toma como alto de seccion todo el contenido*/
     background: rgba(0, 0, 0); /*color de fondo*/
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     border: solid;
-    border-radius: 6vw; /*redondea los bordes de la caja*/
+    border-top-right-radius: 6vw; /*redondea los bordes de la caja*/
+    border-bottom-left-radius: 6vw; /*redondea los bordes de la caja*/
     border-color: rgb(255, 217, 102);  
+    
 }
-#esquinaSup{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
-    width: 15vw;
+#esquinaSupMenu{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
+    width: 12vw;
     position: absolute; /*Se posiciona en la ultima parte de atras*/
-    top: 9.5vh;
-    left: 14vw; 
+    top: -0.5vh;
+    left: -1vw; 
     z-index: 0;
 }
-#esquinaInf{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
-    width: 15vw;
+#esquinaInfMenu{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
+    width: 12vw;
     position: absolute; /*Se posiciona en la ultima parte de atras*/
     rotate: 180deg;
-    bottom: 9.5vh;
-    right: 14vw; 
+    bottom: -0.5vh;
+    right: -1vw; 
     z-index: 0;
 }
 #centrador2{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
@@ -153,69 +157,82 @@ html, body { /*afecta a todo el cuerpo del documento*/
  display: block;  
  background: rgba(0, 0, 0, 0.5);
 }
-
 #superior{
+    position: relative; 
     background-color:transparent;
 }  
-#pantalla{  
+#pantalla{
+    background: rgba(0, 0, 0); /*color de fondo*/
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: solid;
-    border-radius: 3vw; /*redondea los bordes de la caja*/
-    border-color:  rgb(255, 217, 102);  
+    border-top-right-radius: 6vw; /*redondea los bordes de la caja*/
+    border-bottom-left-radius: 6vw; /*redondea los bordes de la caja*/
+    border-color: rgb(255, 217, 102);
+}
+#esquinaSupApp{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
+    width: 12vw;
+    position: absolute; /*Se posiciona en la ultima parte de atras*/
+    top: -0.5vh;
+    left: -1vw; 
+    z-index: 1;
+}
+#esquinaInfApp{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
+    width: 12vw;
+    position: absolute;/*Se posiciona en la ultima parte de atras*/
+    rotate: 180deg;
+    bottom: -0.5vh;
+    right: -1vw;
+    z-index: 1;
+
 }
 #video{
     background: rgba(0, 0, 0); /*color de fondo*/
 }
 #titular{
     position:absolute;
-    top:0px;
-    left:0px;
+    top: 0;
+    left: 0;
     z-index:1;
     width: 100vw; /*El ancho de la imagen cambia segun el ancho de la pag*/
-    padding-top: 0; /*crea un margen interior*/
 } 
-
 #lienzo{
     position:absolute;
-    top:0px;
-    left:0%;
+    top:0;
+    left:0;
     z-index:2;
 }
-
 #inferior{
     background-color:transparent;
 }
 #comandos{
 
-    margin-top:3vh;
-    margin-bottom:3vh;
     display:inline-block;  
     text-align: center; /*Se centra el contenido*/   
    }
 #modo{
     background-color: transparent;
     border: none;
-    margin-inline: 5%;
     width: 30%;
     height: 20vw;
 }
 #captura{
     background-color: transparent;
     border: none;
-    margin-inline: 5%;
     width: 30%;
     height: 20vw;
 }
 #limpiar{
     background-color: transparent;
     border: none;
-    margin-inline: 5%;
     width: 30%;
     height: 20vw;
 }
 #guardar{
     background-color: transparent;
     border: none;
-    margin-inline: 5%;
     width: 30%;
     height: 20vw;
 }
