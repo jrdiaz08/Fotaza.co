@@ -133,6 +133,9 @@ function captura() {
   contexto.drawImage(video, 0, 0, parseInt(ancho), parseInt(altovideo));
  // contexto.imageSmoothingEnabled = true;
   contexto.drawImage(testa, 0, 0, (testa.width), (testa.height));
+  contexto.drawImage(pie, 0, (altopantalla*0.9), (pie.width), (pie.height));
+  contexto.drawImage(izq, 0, (altopantalla*0.2), (izq.width), (izq.height));
+  contexto.drawImage(der, (ancho-der.width), (altopantalla*0.2), (der.width), (der.height));
   setTimeout(pausacapturar, 100); 
 };
 function pausacapturar(){
