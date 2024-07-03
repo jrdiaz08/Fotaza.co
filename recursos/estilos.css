@@ -257,7 +257,9 @@ html, body { /*afecta a todo el cuerpo del documento*/
     height: auto;
 }
 #final{ /*afecta a la seccion final*/
+    position:absolute;
     background-color: black;
     font-size:3vh; /*tamaño de letra*/
     border-top: solid rgb(255, 217, 102); /*colorea solo el border superior de la caja*/  
+    bottom: 0;
 }
