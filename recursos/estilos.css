@@ -191,13 +191,29 @@ html, body { /*afecta a todo el cuerpo del documento*/
 #video{
     background: rgba(0, 0, 0); /*color de fondo*/
 }
-#titular{
+#testa{
     position:absolute;
     top: 0px;
-    left: 0px;
     z-index: 1;
     width: 100vw; /*El ancho de la imagen cambia segun el ancho de la pag*/
 } 
+#pie{
+    position:absolute;
+    bottom: 0px;
+    z-index: 1;
+    width: 100vw; /*El ancho de la imagen cambia segun el ancho de la pag*/
+} 
+#izq{
+    position:absolute;
+    left: 0px;
+    z-index: 1;
+} 
+#der{
+    position:absolute;
+    right: 0px;
+    z-index: 1;
+} 
+
 #lienzo{
     position:absolute;
     top:0;

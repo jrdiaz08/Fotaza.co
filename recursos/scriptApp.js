@@ -1,5 +1,8 @@
 let video = document.getElementById("video");
-let titular = document.getElementById("titular");
+let testa = document.getElementById("testa");
+let pie = document.getElementById("pie");
+let der = document.getElementById("der");
+let izq = document.getElementById("izq");
 let canales;
 let cambioCamara = "user";
 var videoconfig = {audio: false,
@@ -61,8 +64,15 @@ function startup() {
   document.getElementById('comandos').style.height = altocomandos + "px"; // en la seccion "comandos" se altera la propiedad css heigth
   document.getElementById('comandos').style.width = ancho + "px"; // en la seccion "comandos" se altera la propiedad css width 
   document.getElementById('final').style.height = altofinal + "px"; // en la seccion "final" se altera la propiedad css heigth
-  document.getElementById('final').style.width = ancho + "px"; // en la seccion "final" se altera la propiedad css width 
+  document.getElementById('final').style.width = ancho + "px"; // en la seccion "final" se altera la propiedad css width
   
+  document.getElementById('testa').style.height = (altopantalla*0.2) + "px"; // en la seccion "final" se altera la propiedad css heigth
+  document.getElementById('der').style.height = (altopantalla*0.7) + "px"; // en la seccion "final" se altera la propiedad css heigth
+  document.getElementById('der').style.top = (altopantalla*0.2) + "px"; // en la seccion "final" se altera la propiedad css heigth
+  document.getElementById('izq').style.height = (altopantalla*0.7) + "px"; // en la seccion "final" se altera la propiedad css heigth
+  document.getElementById('izq').style.top = (altopantalla*0.2) + "px"; // en la seccion "final" se altera la propiedad css heigth
+  document.getElementById('pie').style.height = (altopantalla*0.1) + "px"; // en la seccion "final" se altera la propiedad css heigth
+
 }
   
   window.addEventListener('load',startup, false);
@@ -107,7 +117,7 @@ function pausamodo(){
 function captura() {
   document.getElementById('captura').style.transform = "scaleX(-0.8)scaleY(0.8)";
   var ubicacion = document.getElementById("pantalla");
-  const referencia = document.getElementById("titular");
+  const referencia = document.getElementById("testa");
   ubicacion.insertBefore(lienzo, referencia);
   var contexto = lienzo.getContext('2d');
   
@@ -122,7 +132,7 @@ function captura() {
   contexto.imageSmoothingEnabled = true;
   contexto.drawImage(video, 0, 0, parseInt(ancho), parseInt(altovideo));
  // contexto.imageSmoothingEnabled = true;
-  contexto.drawImage(titular, 0, 0, (titular.width), (titular.height));
+  contexto.drawImage(testa, 0, 0, (testa.width), (testa.height));
   setTimeout(pausacapturar, 100); 
 };
 function pausacapturar(){
