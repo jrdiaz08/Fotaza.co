@@ -93,18 +93,18 @@ html, body { /*afecta a todo el cuerpo del documento*/
     
 }
 #esquinaSupMenu{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
-    width: 12vw;
+    width: 10vw;
     position: absolute; /*Se posiciona en la ultima parte de atras*/
     top: -0.5vh;
-    left: -1vw; 
+    left: -0.5vw; 
     z-index: 0;
 }
 #esquinaInfMenu{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
-    width: 12vw;
+    width: 10vw;
     position: absolute; /*Se posiciona en la ultima parte de atras*/
     rotate: 180deg;
     bottom: -0.5vh;
-    right: -1vw; 
+    right: -0.5vw; 
     z-index: 0;
 }
 #centrador2{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
@@ -143,6 +143,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
     color: rgb(0, 0, 0); /*define el color de fuente*/
     background:transparent; /*define el color de fondo*/
 }
+
 .link2{ /*afecta a la seccion link*/
     font-family: "fuente"; /*define el tipo de fuente*/
     text-decoration: none; /*le quita el subrayado al link*/
@@ -155,7 +156,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
  width: 100vw;
  height: 100vh;
  display: block;  
- background: rgba(0, 0, 0, 0.5);
+ background: rgba(0, 0, 0, 0.7);
 }
 #superior{
     position: relative; 
@@ -163,24 +164,23 @@ html, body { /*afecta a todo el cuerpo del documento*/
 }  
 #pantalla{
     background: rgba(0, 0, 0); /*color de fondo*/
+
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /*display: flex; align-items: center; justify-content: center;*/
     border: solid;
     border-top-right-radius: 6vw; /*redondea los bordes de la caja*/
     border-bottom-left-radius: 6vw; /*redondea los bordes de la caja*/
     border-color: rgb(255, 217, 102);
 }
 #esquinaSupApp{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
-    width: 12vw;
+    width: 10vw;
     position: absolute; /*Se posiciona en la ultima parte de atras*/
     top: -0.5vh;
     left: -1vw; 
     z-index: 1;
 }
 #esquinaInfApp{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
-    width: 12vw;
+    width: 10vw;
     position: absolute;/*Se posiciona en la ultima parte de atras*/
     rotate: 180deg;
     bottom: -0.5vh;
@@ -193,9 +193,9 @@ html, body { /*afecta a todo el cuerpo del documento*/
 }
 #titular{
     position:absolute;
-    top: 0;
-    left: 0;
-    z-index:1;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
     width: 100vw; /*El ancho de la imagen cambia segun el ancho de la pag*/
 } 
 #lienzo{

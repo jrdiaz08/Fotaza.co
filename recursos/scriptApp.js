@@ -63,8 +63,6 @@ function startup() {
   document.getElementById('final').style.height = altofinal + "px"; // en la seccion "final" se altera la propiedad css heigth
   document.getElementById('final').style.width = ancho + "px"; // en la seccion "final" se altera la propiedad css width 
   
-  document.getElementById('titular').style.top = altosuperior + "px"; // en la seccion "final" se altera la propiedad css heigth
-
 }
   
   window.addEventListener('load',startup, false);
