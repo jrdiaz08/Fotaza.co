@@ -256,6 +256,11 @@ html, body { /*afecta a todo el cuerpo del documento*/
     width: 15vw;
     height: auto;
 }
+#texto{
+   color: #7f6000;
+   font-family: "fuente"; /*se declara el nombre de la fuente*/
+    src: url(fotazafont.ttf); /*se selecciona el archivo de la fuente*/
+}
 #final{ /*afecta a la seccion final*/
     position:absolute;
     background-color: black;
