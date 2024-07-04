@@ -83,11 +83,12 @@ html, body { /*afecta a todo el cuerpo del documento*/
     height: 80vh;/*se toma como alto de seccion todo el contenido*/
     background: rgba(0, 0, 0); /*color de fondo*/
     position: absolute;
-    top: 5vh;
+    top: 10vh;
+    left: 15vw;    
     display: flex;
+    border: solid;
     align-items: center;
     justify-content: center;
-    border: solid;
     border-top-right-radius: 6vw; /*redondea los bordes de la caja*/
     border-bottom-left-radius: 6vw; /*redondea los bordes de la caja*/
     border-color: rgb(255, 217, 102);  
@@ -156,7 +157,9 @@ html, body { /*afecta a todo el cuerpo del documento*/
  width: 100vw;
  height: 100vh;
  display: block;  
- background: rgba(0, 0, 0, 0.7);
+ align-items: center;
+ justify-content: center;
+ background: rgba(0, 0, 0, 0.4);
 }
 #superior{
     position: relative; 
@@ -264,8 +267,9 @@ html, body { /*afecta a todo el cuerpo del documento*/
 }
 #final{ /*afecta a la seccion final*/
     position:absolute;
+    bottom: 0;
+    width: 100vw;
     background-color: black;
     font-size:3vh; /*tamaño de letra*/
     border-top: solid rgb(255, 217, 102); /*colorea solo el border superior de la caja*/  
-    bottom: 0;
 }
