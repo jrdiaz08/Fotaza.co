@@ -11,7 +11,9 @@
 }
 
 html, body { /*afecta a todo el cuerpo del documento*/
-    height:100dvh;
+    height: 100%; 
+    margin: 0; 
+    padding: 0;
     font-family: "fuente"; /*estilo de letra*/
     background: rgb(0, 0, 0); /*color de fondo*/    
    
@@ -48,7 +50,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
 #fondo{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
     transform: scale(0);
     width: 100vw; /*se toma como ancho de seccion todo el contenido*/
-    height: 100vh;/*se toma como alto de seccion todo el contenido*/
+    height: 100%;/*se toma como alto de seccion todo el contenido*/
     border: none;
     background: rgb(0, 0, 0); /*color de fondo*/
     background-size:35vw;
@@ -80,10 +82,10 @@ html, body { /*afecta a todo el cuerpo del documento*/
 }
 #menu{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
     width: 70vw; /*se toma como ancho de seccion todo el contenido*/
-    height: 80vh;/*se toma como alto de seccion todo el contenido*/
+    height: 80%;/*se toma como alto de seccion todo el contenido*/
     background: rgba(0, 0, 0); /*color de fondo*/
     position: absolute;
-    top: 0;
+    top: 10vh;
     left: 15vw;    
     display: flex;
     border: solid;
@@ -155,7 +157,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
 
 #filtro{
  width: 100vw;
- height: 100vh;
+ height: 100%;
  display: block;  
  align-items: center;
  justify-content: center;
