@@ -85,7 +85,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
     height: 80%;/*se toma como alto de seccion todo el contenido*/
     background: rgba(0, 0, 0); /*color de fondo*/
     position: absolute;
-    top: 10vh;
+    top: 8vh;
     left: 15vw;    
     display: flex;
     border: solid;
