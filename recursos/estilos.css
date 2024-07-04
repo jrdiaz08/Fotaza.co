@@ -11,7 +11,7 @@
 }
 
 html, body { /*afecta a todo el cuerpo del documento*/
-    height:100vh;
+    height:100dvh;
     font-family: "fuente"; /*estilo de letra*/
     background: rgb(0, 0, 0); /*color de fondo*/    
    
