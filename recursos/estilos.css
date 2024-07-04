@@ -21,28 +21,28 @@ html, body { /*afecta a todo el cuerpo del documento*/
 #orientacion{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
     transform: scale(0);
     width: 100vw; /*se toma como ancho de seccion todo el contenido*/
-    height: 100vh;/*se toma como alto de seccion todo el contenido*/
+    height: 100%;/*se toma como alto de seccion todo el contenido*/
     background: rgb(0, 0, 0); /*color de fondo*/
     position: absolute; /*sobrepone la seccion orientacion para tapar el resto del contenido*/  
     z-index: 2;  
 }
 #horizontal{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
     width: 100vw; /*se toma como ancho de seccion todo el contenido*/
-    height: 100vh;/*se toma como alto de seccion todo el contenido*/
+    height: 100%;/*se toma como alto de seccion todo el contenido*/
     display: flex;
     align-items: center;
     justify-content: center;
 }
 #loader{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
     width: 100vw; /*se toma como ancho de seccion todo el contenido*/
-    height: 100vh;/*se toma como alto de seccion todo el contenido*/
+    height: 100%;/*se toma como alto de seccion todo el contenido*/
     background: rgb(0, 0, 0); /*color de fondo*/
     position: fixed; /*sobrepone la seccion loader para tapar el resto del contenido*/
     z-index: 1;
 }
 #centrador1{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
     width: 100vw; /*se toma como ancho de seccion todo el contenido*/
-    height: 100vh;/*se toma como alto de seccion todo el contenido*/
+    height: 100%;/*se toma como alto de seccion todo el contenido*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,7 +85,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
     height: 80%;/*se toma como alto de seccion todo el contenido*/
     background: rgba(0, 0, 0); /*color de fondo*/
     position: absolute;
-    top: 8vh;
+    top: 8%;
     left: 15vw;    
     display: flex;
     border: solid;
@@ -98,16 +98,16 @@ html, body { /*afecta a todo el cuerpo del documento*/
 #esquinaSupMenu{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
     width: 10vw;
     position: absolute; /*Se posiciona en la ultima parte de atras*/
-    top: -0.5vh;
-    left: -0.5vw; 
+    top: -0.5%;
+    left: -0.5%; 
     z-index: 0;
 }
 #esquinaInfMenu{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
     width: 10vw;
     position: absolute; /*Se posiciona en la ultima parte de atras*/
     rotate: 180deg;
-    bottom: -0.5vh;
-    right: -0.5vw; 
+    bottom: -0.5%;
+    right: -0.5%; 
     z-index: 0;
 }
 #centrador2{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
@@ -161,7 +161,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
  display: block;  
  align-items: center;
  justify-content: center;
- background: rgba(0, 0, 0, 0.4);
+ background: rgba(0, 0, 0, 0.3);
 }
 #superior{
     position: relative; 

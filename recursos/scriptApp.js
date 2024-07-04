@@ -63,8 +63,6 @@ function startup() {
   document.getElementById('inferior').style.width = ancho + "px"; // en la seccion "fondo" se altera la propiedad css width 
   document.getElementById('comandos').style.height = altocomandos + "px"; // en la seccion "comandos" se altera la propiedad css heigth
   document.getElementById('comandos').style.width = ancho + "px"; // en la seccion "comandos" se altera la propiedad css width 
-  document.getElementById('final').style.height = altofinal + "px"; // en la seccion "final" se altera la propiedad css heigth
-  document.getElementById('final').style.width = ancho + "px"; // en la seccion "final" se altera la propiedad css width
   
   document.getElementById('testa').style.height = (altopantalla*0.2) + "px"; // en la seccion "final" se altera la propiedad css heigth
   document.getElementById('der').style.height = (altopantalla*0.7) + "px"; // en la seccion "final" se altera la propiedad css heigth
