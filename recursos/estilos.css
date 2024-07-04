@@ -82,7 +82,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
     width: 70vw; /*se toma como ancho de seccion todo el contenido*/
     height: 80vh;/*se toma como alto de seccion todo el contenido*/
     background: rgba(0, 0, 0); /*color de fondo*/
-    position: relative;
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -262,7 +262,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
     letter-spacing: 0.08em;
 }
 #final{ /*afecta a la seccion final*/
-    position:fixed;
+    position:absolute;
     background-color: black;
     font-size:3vh; /*tamaño de letra*/
     border-top: solid rgb(255, 217, 102); /*colorea solo el border superior de la caja*/  
