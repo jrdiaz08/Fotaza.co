@@ -90,7 +90,6 @@ html, body { /*afecta a todo el cuerpo del documento*/
     border-top-right-radius: 6vw; /*redondea los bordes de la caja*/
     border-bottom-left-radius: 6vw; /*redondea los bordes de la caja*/
     border-color: rgb(255, 217, 102);  
-    
 }
 #esquinaSupMenu{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
     width: 10vw;
@@ -263,7 +262,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
     letter-spacing: 0.08em;
 }
 #final{ /*afecta a la seccion final*/
-    position:absolute;
+    position:fixed;
     background-color: black;
     font-size:3vh; /*tamaño de letra*/
     border-top: solid rgb(255, 217, 102); /*colorea solo el border superior de la caja*/  
