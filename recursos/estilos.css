@@ -83,7 +83,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
     height: 80vh;/*se toma como alto de seccion todo el contenido*/
     background: rgba(0, 0, 0); /*color de fondo*/
     position: absolute;
-    top: 10vh;
+    top: 0;
     left: 15vw;    
     display: flex;
     border: solid;
