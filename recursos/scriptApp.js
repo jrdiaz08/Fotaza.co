@@ -4,7 +4,7 @@ let pie = document.getElementById("pie");
 let der = document.getElementById("der");
 let izq = document.getElementById("izq");
 let canales;
-let cambioCamara = "user";
+let cambioCamara = "eenvironment";
 var videoconfig = {audio: false,
   video: {facingMode: cambioCamara, autoPlay: true, playsinline: true,
  muted: true}

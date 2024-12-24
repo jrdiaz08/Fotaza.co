@@ -11,3 +11,8 @@ GIT log                           (mirar el historico de los commit para recuper
 GIT branch                        (mirar las ramas existentes)
 GIT checkout "..."                  (selecciona una rama concreta o un commit, el "..." es para crear o indicar el nombre de la rama o el identificador del commit)
 GIT pull                          (Descarga los archivos del repositorio remoto al repositorio local)
+
+Para poner borde a letras y objetos
+1 click derecho en la capa, alfa a seleccion
+2 seleccionar/ agrandar/ definir grosor
+3 Herramienta de relleno/ seleccionar color
