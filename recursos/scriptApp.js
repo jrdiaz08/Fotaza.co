@@ -4,7 +4,7 @@ let pie = document.getElementById("pie");
 let der = document.getElementById("der");
 let izq = document.getElementById("izq");
 let canales;
-let cambioCamara = "eenvironment";
+let cambioCamara = "environment";
 var videoconfig = {audio: false,
   video: {facingMode: cambioCamara, autoPlay: true, playsinline: true,
  muted: true}
@@ -78,9 +78,9 @@ function startup() {
 
 function modo() {
   document.getElementById('modo').style.transform = "scaleX(-0.8)scaleY(0.8)";
-  if(cambioCamara == "user"){
+  if(cambioCamara == "environment"){
    canales.forEach(track => track.stop())
-    cambioCamara = "environment";
+    cambioCamara = "user";
     console.log("Camara= ",cambioCamara);
     videoconfig = {audio: false,
       video: {facingMode: cambioCamara, autoPlay: true,
@@ -93,7 +93,7 @@ playsInline: true, muted: true}
   }
   else{
     canales.forEach(track => track.stop())
-    cambioCamara = "user";
+    cambioCamara = "environment";
     console.log("Camara= ",cambioCamara);
     videoconfig = {audio: false,
       video: {facingMode: cambioCamara, autoPlay: true,
