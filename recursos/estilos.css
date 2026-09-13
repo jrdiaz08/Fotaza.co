@@ -148,6 +148,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
 }
 
 .link2{ /*afecta a la seccion link*/
+    bottom: 1dvh; /* define la distancia del link con respecto al borde inferior de la pantalla */
     font-family: "fuente"; /*define el tipo de fuente*/
     text-decoration: none; /*le quita el subrayado al link*/
     color: #7f6000; /*define el color de fuente*/

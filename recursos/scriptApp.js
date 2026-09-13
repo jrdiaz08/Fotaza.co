@@ -141,7 +141,7 @@ function captura() {
   else{
     contexto.drawImage(video, 0, 0, parseInt(ancho), parseInt(altovideo));
   }
-
+  
   contexto.drawImage(testa, 0, 0, (testa.width), (testa.height));
   contexto.drawImage(pie, 0, (altopantalla*0.9), (pie.width), (pie.height));
   contexto.drawImage(izq, 0, (altopantalla*0.2), (izq.width), (izq.height));
