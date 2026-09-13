@@ -374,10 +374,10 @@ html, body { /*afecta a todo el cuerpo del documento*/
 #masDetalles{ /*afecta a la seccion img*/
     border-radius: 5vw; /*redondea los bordes de la caja*/
     border: none; /*define el grosor del borde*/
-    width: 30vw;
+    width: 26vw;
     position: absolute; /*Se posiciona en la ultima parte de atras*/
     bottom: 14dvh;
-    left: 35vw; 
+    left: 37vw; 
     z-index: 3; 
     box-shadow: 2px 2px 0px rgba(127, 91, 0, 1),
     2px 2px 0px rgba(127, 91, 0, 0.9),
