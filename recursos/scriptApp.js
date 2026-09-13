@@ -131,7 +131,16 @@ function captura() {
   lienzo.style.height = `${posicion.height}px`;
   
   contexto.imageSmoothingEnabled = true;
-  contexto.drawImage(video, 0, 0, parseInt(ancho), parseInt(altovideo));
+
+  if(cambioCamara == "user"){ //condicional para voltear la imagen de la camara frontal en el eje x
+   contexto.save(); //se guarda el estado del lienzo
+   contexto.scale(-1, 1); //Se ajusta la escala del lienzo 
+   contexto.drawImage(video, 0, 0, (parseInt(ancho)*-1), parseInt(altovideo)); //Se invierte su anchura para dibujar en espejo
+   contexto.restore(); //se restaura el estado del lienzo para que el resto de elementos no se dibujen invertidos
+  }
+  else{
+    contexto.drawImage(video, 0, 0, parseInt(ancho), parseInt(altovideo));
+  }
  // contexto.imageSmoothingEnabled = true;
   contexto.drawImage(testa, 0, 0, (testa.width), (testa.height));
   contexto.drawImage(pie, 0, (altopantalla*0.9), (pie.width), (pie.height));
