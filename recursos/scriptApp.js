@@ -58,7 +58,7 @@ function startup() {
   document.getElementById('pantalla').style.width = ancho + "px"; // en la seccion "pantalla" se altera la propiedad css width 
   document.getElementById('video').style.height = altovideo + "px"; // en la seccion "pantalla" se altera la propiedad css height
   document.getElementById('video').style.width = ancho + "px"; // en la seccion "pantalla" se altera la propiedad css width
-  document.getElementById('video').style.transform = 'scaleX(-1)';; // en la seccion "pantalla" Voltea la imagen de la camara en el eje x
+  document.getElementById('video').style.transform = 'scaleX(1)';; // en la seccion "pantalla" Voltea la imagen de la camara en el eje x
 
   document.getElementById('inferior').style.height = altoinferior + "px"; // en la seccion "fondo" se altera la propiedad css heigth
   document.getElementById('inferior').style.width = ancho + "px"; // en la seccion "fondo" se altera la propiedad css width 
@@ -88,7 +88,7 @@ function modo() {
 playsInline: true, muted: true}
     };  navigator.mediaDevices.getUserMedia(videoconfig).then(stream => { 
       video.srcObject = stream,
-      video.style.transform = 'scaleX(1)';
+      video.style.transform = 'scaleX(-1)';
       canales = stream.getTracks();
       ;
     }).catch(console.error)
@@ -102,7 +102,7 @@ playsInline: true, muted: true}
 playsInline: true, muted: true}
     }; navigator.mediaDevices.getUserMedia(videoconfig).then(stream => { 
       video.srcObject = stream,
-      video.style.transform = 'scaleX(-1)';
+      video.style.transform = 'scaleX(1)';
       canales = stream.getTracks();
       ;
 
