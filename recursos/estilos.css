@@ -114,7 +114,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
     position: relative;
 }
 #fotaza{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
-    margin-bottom: 2vh;
+    margin-bottom: 2dvh;
     width: 55vw;
 }
 .opciones{ /*afecta a la seccion img*/
@@ -122,10 +122,10 @@ html, body { /*afecta a todo el cuerpo del documento*/
     background: rgb(255, 217, 102); /*Define el color de fondo de los botones*/
     padding: 1vh; /*define un margen interior de 4px*/
     font-size: 8vw; /*tamaño de letra ue se ajusta al ancho de la pag*/
-    margin-top: 2vh; /*margen en las cajas de opciones*/
-    margin-bottom: 2vh; /*margen en las cajas de opciones*/
-    margin-left: 1vh;
-    margin-right: 1vh;
+    margin-top: 2dvh; /*margen en las cajas de opciones*/
+    margin-bottom: 2dvh; /*margen en las cajas de opciones*/
+    margin-left: 1dvh;
+    margin-right: 1dvh;
     border-radius: 2vh; /*redondea los bordes de la caja*/
     border: none; /*define el grosor del borde*/
     width: 30vw;
@@ -180,7 +180,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
 #esquinaSupApp{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
     width: 10vw;
     position: absolute; /*Se posiciona en la ultima parte de atras*/
-    top: -0.5vh;
+    top: -0.5dvh;
     left: -1vw; 
     z-index: 1;
 }
@@ -272,7 +272,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
     bottom: 0;
     width: 100vw;
     background-color: rgb(255, 249, 230);
-    font-size:3vh; /*tamaño de letra*/
+    font-size:3dvh; /*tamaño de letra*/
     border-top: solid rgb(255, 217, 102); /*colorea solo el border superior de la caja*/  
 }
 #fondoInvitacion{ /*afecta a la seccion fondoInvitacion*/
@@ -310,27 +310,27 @@ html, body { /*afecta a todo el cuerpo del documento*/
 }
 #marcoInvitacion{ /*afecta a la seccion fondoInvitacion*/
     width: 100vw; /*se toma como ancho de seccion todo el contenido*/
-    height: 96vh;/*se toma como alto de seccion todo el contenido*/  
+    height: 96dvh;/*se toma como alto de seccion todo el contenido*/  
 
 }
 #esqSupInvitacion{ /*afecta a la seccion fondoInvitacion*/
     width: 45vw;
     position: absolute; /*Se posiciona en la ultima parte de atras*/
-    top: 1vh;
+    top: 1dvh;
     left: 1vw; 
     z-index: 1;
 }
 #esqInfInvitacion{ /*afecta a la seccion fondoInvitacion*/
     width: 35vw;
     position: absolute; /*Se posiciona en la ultima parte de atras*/
-    bottom: 1vh;
+    bottom: 1dvh;
     right: 1vw;
     z-index: 1;    
 }
 #nombreNovios{ /*afecta a la seccion fondoInvitacion*/
-    height: 17vh;
+    height: 15vh;
     position: absolute; /*Se posiciona en la ultima parte de atras*/
-    top: 5vh;
+    top: 5dvh;
     left: 50%;
     transform:translate(-50%, 0%);  
     z-index: 2;    
@@ -343,7 +343,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
 #palabrasDeInvitacion{ /*afecta a la seccion fondoInvitacion*/
     font-family: "fuenteInvitacion"; /*estilo de letra*/
     color: #250907;
-    font-size: 18px;
+    font-size: 16px;
     width: 80vw;
     position: absolute; /*Se posiciona en la ultima parte de atras*/
     left: 10vw;
@@ -352,7 +352,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
     z-index: 3;    
 }
 #nombreInvitado{ /*afecta a la seccion fondoInvitacion*/
-     font-size: 22px;
+     font-size: 16px;
 }
 
 #adorno1{ /*afecta a la seccion fondoInvitacion*/
@@ -367,7 +367,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
 #anillos{ /*afecta a la seccion fondoInvitacion*/
     width: 16vw;
     position: absolute; /*Se posiciona en la ultima parte de atras*/
-    bottom: 6vh;
+    bottom: 4dvh;
     left: 42vw; 
     z-index: 2;    
 }
@@ -376,7 +376,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
     border: none; /*define el grosor del borde*/
     width: 20vw;
     position: absolute; /*Se posiciona en la ultima parte de atras*/
-    bottom: 14vh;
+    bottom: 12dvh;
     left: 40vw; 
     z-index: 3; 
     box-shadow: 2px 2px 0px rgba(127, 91, 0, 1),
