@@ -352,7 +352,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
     z-index: 3;    
 }
 #nombreInvitado{ /*afecta a la seccion fondoInvitacion*/
-     font-size: 16px;
+     font-size: 20px;
 }
 
 #adorno1{ /*afecta a la seccion fondoInvitacion*/
@@ -367,17 +367,17 @@ html, body { /*afecta a todo el cuerpo del documento*/
 #anillos{ /*afecta a la seccion fondoInvitacion*/
     width: 16vw;
     position: absolute; /*Se posiciona en la ultima parte de atras*/
-    bottom: 4dvh;
+    bottom: 6dvh;
     left: 42vw; 
     z-index: 2;    
 }
 #masDetalles{ /*afecta a la seccion img*/
     border-radius: 5vw; /*redondea los bordes de la caja*/
     border: none; /*define el grosor del borde*/
-    width: 20vw;
+    width: 30vw;
     position: absolute; /*Se posiciona en la ultima parte de atras*/
-    bottom: 12dvh;
-    left: 40vw; 
+    bottom: 14dvh;
+    left: 35vw; 
     z-index: 3; 
     box-shadow: 2px 2px 0px rgba(127, 91, 0, 1),
     2px 2px 0px rgba(127, 91, 0, 0.9),
