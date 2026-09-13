@@ -188,7 +188,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
     width: 10vw;
     position: absolute;/*Se posiciona en la ultima parte de atras*/
     rotate: 180deg;
-    bottom: -0.5vh;
+    bottom: -0.5dvh;
     right: -1vw;
     z-index: 1;
 
@@ -328,7 +328,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
     z-index: 1;    
 }
 #nombreNovios{ /*afecta a la seccion fondoInvitacion*/
-    height: 15vh;
+    height: 15dvh;
     position: absolute; /*Se posiciona en la ultima parte de atras*/
     top: 5dvh;
     left: 50%;
