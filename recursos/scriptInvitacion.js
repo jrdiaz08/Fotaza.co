@@ -34,6 +34,7 @@ document.body.onload = function inicio() {
   let nombreInvitado= document.getElementById("nombreInvitado");
   let detallesCupo1 = document.getElementById("detallesCupo1");
   let detallesCupo2 = document.getElementById("detallesCupo2");
+  let click = document.getElementById("click");
   let anillos = document.getElementById("anillos");   
   let esqInfInvitacion = document.getElementById("esqInfInvitacion");
   let masDetalles = document.getElementById("masDetalles");
@@ -53,6 +54,7 @@ document.body.onload = function inicio() {
   detallesCupo1.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
   detallesCupo2.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
   anillos.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
+  click.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
   esqInfInvitacion.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
   masDetalles.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
 
@@ -155,7 +157,8 @@ function masDetalles() {
       } 
      if (800<=tiempo && tiempo<=2000) {
       detallesCupo.style.opacity = (tiempo-800)/1200; // en la seccion "fondoInvitacion" se altera la propiedad css width
-     }
+      click.style.opacity = (tiempo-800)/1400; // en la seccion "fondoInvitacion" se altera la propiedad css width
+    }
     }
    masMenosDetalles = "0";
   }
@@ -178,6 +181,7 @@ function masDetalles() {
       
      if (0<=tiempo && tiempo<=1200) {
        detallesCupo.style.opacity = 1-(tiempo/1200); // en la seccion "fondoInvitacion" se altera la propiedad css width
+       click.style.opacity = 1-(tiempo/1200); // en la seccion "fondoInvitacion" se altera la propiedad css width
      } 
      if (800<=tiempo && tiempo<=2000) {
       palabrasDeInvitacion.style.opacity = (tiempo-800)/1200; // en la seccion "fondoInvitacion" se altera la propiedad css width
