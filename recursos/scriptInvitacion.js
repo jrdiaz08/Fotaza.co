@@ -131,6 +131,11 @@ setTimeout(function () { // se ejecuta la funcion una vez se carga la pagina, co
   }
 } 
 
+function clickAnillo0() {
+
+  document.getElementById("fondoIntro").style.display = "none";
+  
+}
 var masMenosDetalles = 1;
 
 function masDetalles() {

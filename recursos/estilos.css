@@ -277,6 +277,135 @@ html, body { /*afecta a todo el cuerpo del documento*/
     font-size:3dvh; /*tamaño de letra*/
     border-top: solid rgb(255, 217, 102); /*colorea solo el border superior de la caja*/  
 }
+
+
+
+#fondoIntro{/*afecta a la seccion fondointro*/
+    transform: scale(1);
+    width: 100vw; /*se toma como ancho de seccion todo el contenido*/
+    height: 100%;/*se toma como alto de seccion todo el contenido*/
+    border: none;
+    background: rgb(255, 249, 230); /*color de fondo*/
+    background-size:35vw;
+    position: static; /*Se posiciona en la ultima parte de atras*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: fondoInvitacion; /*se declara una animacion con el nombre de "fondo"*/
+    animation-duration: 60s; /*se declara la duracion de la animacion*/
+    animation-iteration-count: infinite; /*se declara las veces que se reproducira la animacion*/
+    animation-play-state: running; /*se declara si el estado de pausa/play*/
+    animation-direction: alternate-reverse; /*se declara el sentido de reproduccion*/
+    animation-timing-function: linear;/*se declara la velocidad de reporduccion*/
+}
+@keyframes fondoInvitacion { /*se ejecuta la animacion de nombre "fondo"*/
+    0%{
+        background-image: url(fondoDinamicoInvitacion.png); /*carga la imagen BackGround*/
+        background-position-x: Center; /*desplaza el fondo en el eje x*/
+        background-position-y: bottom; /*desplaza el fondo en el eje y*/
+    }
+    50% {background-image: url(fondoDinamicoInvitacion.png); /*carga la imagen BackGround*/
+        background-position-x: left; /*desplaza el fondo en el eje x*/
+        background-position-y: center; /*desplaza el fondo en el eje y*/
+    }
+   100%{ background-image: url(fondoDinamicoInvitacion.png); /*carga la imagen BackGround*/
+        background-position-x: center; /*desplaza el fondo en el eje x*/
+        background-position-y: top; /*desplaza el fondo en el eje y*/
+    }
+}
+#anillos0{ /*afecta a la seccion fondoInvitacion*/
+    width: 20vw;
+    left: 40vw;
+    position: absolute; /*Se posiciona en la ultima parte de atras*/
+    top: 50%;
+    transform:translate(0%, -50%); 
+    z-index: 2; 
+     animation-name: animacionAnillos; /*se declara una animacion con el nombre de "fondo"*/
+    animation-duration: 4s; /*se declara la duracion de la animacion*/
+    animation-iteration-count: infinite; /*se declara las veces que se reproducira la animacion*/
+    animation-play-state: running; /*se declara si el estado de pausa/play*/
+    animation-direction: alternate-reverse; /*se declara el sentido de reproduccion*/
+    animation-timing-function: linear;/*se declara la velocidad de reporduccion*/
+}
+@keyframes animacionAnillos { /*se ejecuta la animacion de nombre "fondo"*/
+    0%{
+        width: 20vw;
+        left: 40vw;
+        top: 50%;
+        transform:translate(0%, -50%); 
+        rotate: -5deg;
+    }
+    50% {width: 20vw;
+        left: 40vw;
+        top: 50%;
+        transform:translate(0%, -50%); 
+        rotate: 0deg;
+    }
+   100%{ width: 20vw;
+        left: 40vw;
+        top: 50%;
+        transform:translate(0%, -50%); 
+        rotate: 5deg;
+    }
+}
+#VJ1{ /*afecta a la seccion fondoInvitacion*/
+    width: 40vw;
+    position: absolute; /*Se posiciona en la ultima parte de atras*/
+    top: 50%;
+    transform:translate(-60%, -130%); 
+    rotate: 5deg;
+    z-index: 3; 
+    border-bottom: 5dvh solid rgb(255, 255, 255);
+    border-right: 5vw solid rgb(255, 255, 255);
+    border-top: 5vw solid rgb(255, 255, 255);
+    border-left: 5vw solid rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  
+}
+#VJ2{ /*afecta a la seccion fondoInvitacion*/
+    width: 40vw;
+    position: absolute; /*Se posiciona en la ultima parte de atras*/
+    top: 50%;
+    transform:translate(60%, -110%); 
+    rotate: -3deg;
+    z-index: 3; 
+    border-bottom: 5dvh solid rgb(255, 255, 255);
+    border-right: 5vw solid rgb(255, 255, 255);
+    border-top: 5vw solid rgb(255, 255, 255);
+    border-left: 5vw solid rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+#VJ3{ /*afecta a la seccion fondoInvitacion*/
+    width: 40vw;
+    position: absolute; /*Se posiciona en la ultima parte de atras*/
+    top: 50%;
+    transform:translate(50%, 40%); 
+     rotate: -5deg;
+    z-index: 3;
+    border-bottom: 5dvh solid rgb(255, 255, 255);
+    border-right: 5vw solid rgb(255, 255, 255);
+    border-top: 5vw solid rgb(255, 255, 255);
+    border-left: 5vw solid rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); 
+}
+#VJ4{ /*afecta a la seccion fondoInvitacion*/
+    width: 40vw;
+    position: absolute; /*Se posiciona en la ultima parte de atras*/
+    top: 50%;
+    transform:translate(-50%, 20%); 
+    rotate: 3deg;
+    z-index: 3; 
+    border-bottom: 5dvh solid rgb(255, 255, 255);
+    border-right: 5vw solid rgb(255, 255, 255);
+    border-top: 5vw solid rgb(255, 255, 255);
+    border-left: 5vw solid rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+
+
+
+
 #fondoInvitacion{ /*afecta a la seccion fondoInvitacion*/
     transform: scale(1);
     width: 100vw; /*se toma como ancho de seccion todo el contenido*/
