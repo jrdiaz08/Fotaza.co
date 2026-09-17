@@ -285,7 +285,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
     width: 100vw; /*se toma como ancho de seccion todo el contenido*/
     height: 100%;/*se toma como alto de seccion todo el contenido*/
     border: none;
-    background: rgb(255, 249, 230); /*color de fondo*/
+    background: rgb(255, 230, 234); /*color de fondo*/
     background-size:35vw;
     position: static; /*Se posiciona en la ultima parte de atras*/
     display: flex;
@@ -366,7 +366,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
     width: 40vw;
     position: absolute; /*Se posiciona en la ultima parte de atras*/
     top: 50%;
-    transform:translate(10%, -115%); 
+    transform:translate(10%, -120%); 
     rotate: -3deg;
     z-index: 3; 
     border-bottom: 5dvh solid rgb(255, 255, 255);
@@ -392,7 +392,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
     width: 40vw;
     position: absolute; /*Se posiciona en la ultima parte de atras*/
     top: 50%;
-    transform:translate(-100%, 20%); 
+    transform:translate(-100%, 25%); 
     rotate: 3deg;
     z-index: 3; 
     border-bottom: 5dvh solid rgb(255, 255, 255);
@@ -411,7 +411,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
     width: 100vw; /*se toma como ancho de seccion todo el contenido*/
     height: 100%;/*se toma como alto de seccion todo el contenido*/
     border: none;
-    background: rgb(255, 249, 230); /*color de fondo*/
+    background: rgb(255, 230, 234); /*color de fondo*/
     background-size:35vw;
     position: static; /*Se posiciona en la ultima parte de atras*/
     display: flex;

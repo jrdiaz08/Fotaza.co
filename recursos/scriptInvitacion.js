@@ -40,12 +40,6 @@ document.body.onload = function inicio() {
   let masDetalles = document.getElementById("masDetalles");
   let link2 = document.getElementById("link2");
 
-  nombreInvitado.textContent = inv;
-
-  console.log("alto= ",alto);
-  console.log("ancho= ",ancho);
-    
-  fallo.style.width = (ancho*0.5) + "px"; // en la seccion "fondoInvitacion" se altera la propiedad css width
   
   marcoInvitacion.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
   esqSupInvitacion.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
@@ -57,6 +51,61 @@ document.body.onload = function inicio() {
   click.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
   esqInfInvitacion.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
   masDetalles.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
+  link2.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
+
+ let fondoIntro = document.getElementById("fondoIntro");
+ let anillos0 = document.getElementById("anillos0");
+ let VJ1 = document.getElementById("VJ1");
+ let VJ2 = document.getElementById("VJ2");
+ let VJ3 = document.getElementById("VJ3");
+ let VJ4 = document.getElementById("VJ4");
+
+ anillos0.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
+ VJ1.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
+ VJ2.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
+ VJ3.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
+ VJ4.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
+
+ let arranque = Date.now(); // recordar la hora de inicio
+  let cronometro = setInterval(function() {
+    let tiempo = Date.now() - arranque; // ¿Cuánto tiempo pasó desde el principio?
+    if (tiempo >= 3000) {
+      clearInterval(cronometro); // terminar la animación después de 2 segundos
+      return;
+    }
+    // dibujar la animación en el momento timePassed
+    animacion(tiempo);
+  }, 20);
+  
+  // mientras timePassed va de 0 a 2000
+  // Opacity obtiene valores de 1 a 0
+  function animacion(tiempo) { 
+    if (200<=tiempo && tiempo<=2200) {
+     VJ1.style.opacity = (tiempo-200)/2000; // en la seccion "fondoInvitacion" se altera la propiedad css width  
+    } 
+    if (500<=tiempo && tiempo<=3000) {
+      VJ3.style.opacity = (tiempo-500)/2500; // en la seccion "fondoInvitacion" se altera la propiedad css width
+    } 
+    if (1000<=tiempo && tiempo<=3000) {
+      VJ4.style.opacity = (tiempo-1000)/2000;// en la seccion "fondoInvitacion" se altera la propiedad css width
+    } 
+    if (1200<=tiempo && tiempo<=2800) {
+      VJ2.style.opacity = (tiempo-1200)/1600; // en la seccion "fondoInvitacion" se altera la propiedad css width
+    } 
+    if (500<=tiempo && tiempo<=3000) {
+      anillos0.style.opacity = (tiempo-500)/2500; // en la seccion "fondoInvitacion" se altera la propiedad css width
+    } 
+  }
+
+
+  nombreInvitado.textContent = inv;
+
+  console.log("alto= ",alto);
+  console.log("ancho= ",ancho);
+    
+  fallo.style.width = (ancho*0.5) + "px"; // en la seccion "fondoInvitacion" se altera la propiedad css width
+  
+  
 
    if (qpo=="s"){
     detallesCupo= document.getElementById("detallesCupo1");
@@ -72,7 +121,78 @@ document.body.onload = function inicio() {
     document.getElementById('orientacion').style.transform="scale(1)";
   }
   
-let arranque = Date.now(); // recordar la hora de inicio
+
+ };
+
+ 
+ window.onresize = function() {
+  var alto = window.innerHeight; 
+  var ancho = window.innerWidth;
+    
+  let fallo = document.getElementById("fallo");
+  fallo.style.width = (ancho*0.5) + "px"; // en la seccion "fondo" se altera la propiedad css width
+      
+  console.log("alto= ",alto);
+  console.log("ancho= ",ancho);
+    
+  if (alto>ancho){ // condicional que se cumple si...
+    document.getElementById('orientacion').style.transform="scale(0)";
+        
+  }else{ // condicional que se cumple si...
+    document.getElementById('orientacion').style.transform="scale(1)";
+  }
+} 
+
+function clickAnillo0() {
+
+ let fondoIntro = document.getElementById("fondoIntro");
+ let anillos0 = document.getElementById("anillos0");
+ let VJ1 = document.getElementById("VJ1");
+ let VJ2 = document.getElementById("VJ2");
+ let VJ3 = document.getElementById("VJ3");
+ let VJ4 = document.getElementById("VJ4");
+
+ let arranque = Date.now(); // recordar la hora de inicio
+  let cronometro = setInterval(function() {
+    let tiempo = Date.now() - arranque; // ¿Cuánto tiempo pasó desde el principio?
+    if (tiempo >= 2000) {
+      clearInterval(cronometro); // terminar la animación después de 2 segundos
+      return;
+    }
+    // dibujar la animación en el momento timePassed
+    animacion(tiempo);
+  }, 20);
+  
+  // mientras timePassed va de 0 a 2000
+  // Opacity obtiene valores de 1 a 0
+  function animacion(tiempo) { 
+    if (200<=tiempo && tiempo<=1200) {
+     VJ1.style.opacity = 1-((tiempo-200)/1000); // en la seccion "fondoInvitacion" se altera la propiedad css width  
+    } 
+    if (500<=tiempo && tiempo<=2000) {
+      VJ3.style.opacity = 1-((tiempo-500)/1500); // en la seccion "fondoInvitacion" se altera la propiedad css width
+    } 
+    if (1000<=tiempo && tiempo<=2000) {
+      VJ4.style.opacity = 1-((tiempo-1000)/1000);// en la seccion "fondoInvitacion" se altera la propiedad css width
+    } 
+    if (1200<=tiempo && tiempo<=1800) {
+      VJ2.style.opacity = 1-((tiempo-1200)/600); // en la seccion "fondoInvitacion" se altera la propiedad css width
+    } 
+    if (500<=tiempo && tiempo<=2000) {
+      anillos0.style.opacity = 1-((tiempo-500)/1500); // en la seccion "fondoInvitacion" se altera la propiedad css width
+    } 
+  }
+
+  setTimeout(function () { // se ejecuta la funcion una vez se carga la pagina, con un retraso definido
+   document.getElementById("fondoIntro").style.display = "none";
+   abrirInvitacion();
+
+ },2500); // el retraso definido en milisegundos
+}
+
+function abrirInvitacion(){
+
+ let arranque = Date.now(); // recordar la hora de inicio
   let cronometro = setInterval(function() {
     let tiempo = Date.now() - arranque; // ¿Cuánto tiempo pasó desde el principio?
     if (tiempo >= 3000) {
@@ -112,33 +232,11 @@ setTimeout(function () { // se ejecuta la funcion una vez se carga la pagina, co
 
  },5000); // el retraso definido en milisegundos
 
- };
- window.onresize = function() {
-  var alto = window.innerHeight; 
-  var ancho = window.innerWidth;
-    
-  let fallo = document.getElementById("fallo");
-  fallo.style.width = (ancho*0.5) + "px"; // en la seccion "fondo" se altera la propiedad css width
-      
-  console.log("alto= ",alto);
-  console.log("ancho= ",ancho);
-    
-  if (alto>ancho){ // condicional que se cumple si...
-    document.getElementById('orientacion').style.transform="scale(0)";
-        
-  }else{ // condicional que se cumple si...
-    document.getElementById('orientacion').style.transform="scale(1)";
-  }
-} 
-
-function clickAnillo0() {
-
-  document.getElementById("fondoIntro").style.display = "none";
-  
 }
+
 var masMenosDetalles = 1;
 
-function masDetalles() {
+function masDetallesClick() {
 
   if(masMenosDetalles == "1"){
     let arranque = Date.now(); // recordar la hora de inicio
