@@ -20,7 +20,7 @@ document.body.onload = function inicio() {
   var ancho = window.innerWidth;
     
   let fallo = document.getElementById("fallo");
-  
+  let fondo = document.getElementById("fondo");
   let isotipoA = document.getElementById("isotipoA");
   let isotipoB = document.getElementById("isotipoB");
   let isologo= document.getElementById("isologo");
@@ -43,6 +43,8 @@ document.body.onload = function inicio() {
   imagotipoB.style.position ="relative"; // en la seccion "fondo" se altera la propiedad css width
   imagotipoB.style.top = (ancho*0.070) + "px"; // en la seccion "fondo" se altera la propiedad css width
   imagotipoB.style.right= (ancho*0.075) + "px";
+
+fondo.style.opacity = "1"; // muestra el contenido del documento
 
   if (alto>ancho){ // condicional que se cumple si...
     document.getElementById('orientacion').style.transform="scale(0)";

@@ -48,6 +48,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
     justify-content: center;
 }
 #fondo{ /*afecta a la seccion loader, espacio para mostrar el icono de inicio*/
+    opacity: 0; /*inicia el documento oculto*/
     transform: scale(1);
     width: 100vw; /*se toma como ancho de seccion todo el contenido*/
     height: 100%;/*se toma como alto de seccion todo el contenido*/
@@ -148,7 +149,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
 }
 
 .link2{ /*afecta a la seccion link*/
-    bottom: 1dvh; /* define la distancia del link con respecto al borde inferior de la pantalla */
+    bottom: 2dvh; /* define la distancia del link con respecto al borde inferior de la pantalla */
     font-family: "fuente"; /*define el tipo de fuente*/
     font-size: 20px; /*define el tamaño de fuente*/
     text-decoration: none; /*le quita el subrayado al link*/
@@ -281,6 +282,7 @@ html, body { /*afecta a todo el cuerpo del documento*/
 
 
 #fondoIntro{/*afecta a la seccion fondointro*/
+    opacity: 0; /*inicia el documento oculto*/
     transform: scale(1);
     width: 100vw; /*se toma como ancho de seccion todo el contenido*/
     height: 100%;/*se toma como alto de seccion todo el contenido*/

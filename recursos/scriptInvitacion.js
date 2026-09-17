@@ -51,7 +51,7 @@ document.body.onload = function inicio() {
   click.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
   esqInfInvitacion.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
   masDetalles.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
-  link2.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
+  
 
  let fondoIntro = document.getElementById("fondoIntro");
  let anillos0 = document.getElementById("anillos0");
@@ -65,6 +65,8 @@ document.body.onload = function inicio() {
  VJ2.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
  VJ3.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
  VJ4.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
+
+fondoIntro.style.opacity = "1"; // muestra el contenido del documento
 
  let arranque = Date.now(); // recordar la hora de inicio
   let cronometro = setInterval(function() {
@@ -228,9 +230,10 @@ function abrirInvitacion(){
 
 }
 setTimeout(function () { // se ejecuta la funcion una vez se carga la pagina, con un retraso definido
+  
   link2.textContent="Ingresa a 📸Fotaza.co "; // en la seccion Final se agrega texto en el contenedor
 
- },5000); // el retraso definido en milisegundos
+ },6000); // el retraso definido en milisegundos
 
 }
 
