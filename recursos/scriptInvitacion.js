@@ -85,16 +85,20 @@ fondoIntro.style.opacity = "1"; // muestra el contenido del documento
   // Opacity obtiene valores de 1 a 0
   function animacion(tiempo) { 
     if (400<=tiempo && tiempo<=2500) {
-     VJ1.style.opacity = (tiempo-400)/2100; // en la seccion "fondoInvitacion" se altera la propiedad css width  
+     VJ1.style.opacity = (tiempo-400)/2100; // en la seccion "fondoInvitacion" se altera la propiedad css width 
+     VJ1.style.rotate =  (tiempo-400)/420 + "deg"; // en la seccion "fondoInvitacion" se altera la propiedad css width
     } 
     if (500<=tiempo && tiempo<=3000) {
       VJ3.style.opacity = (tiempo-500)/2500; // en la seccion "fondoInvitacion" se altera la propiedad css width
+      VJ3.style.rotate =  (-1*(tiempo-500)/500) + "deg"; // en la seccion "fondoInvitacion" se altera la propiedad css width
     } 
     if (1000<=tiempo && tiempo<=3000) {
       VJ4.style.opacity = (tiempo-1000)/2000;// en la seccion "fondoInvitacion" se altera la propiedad css width
+      VJ4.style.rotate =  (tiempo-1000)/667 + "deg"; // en la seccion "fondoInvitacion" se altera la propiedad css width
     } 
     if (1200<=tiempo && tiempo<=2800) {
       VJ2.style.opacity = (tiempo-1200)/1600; // en la seccion "fondoInvitacion" se altera la propiedad css width
+      VJ2.style.rotate =  (-1*(tiempo-1200)/533) + "deg"; // en la seccion "fondoInvitacion" se altera la propiedad css width
     } 
     if (2500<=tiempo && tiempo<=4000) {
       anillos0.style.opacity = (tiempo-2500)/1500; // en la seccion "fondoInvitacion" se altera la propiedad css width
@@ -131,7 +135,7 @@ fondoIntro.style.opacity = "1"; // muestra el contenido del documento
  // Escucha cualquier toque en toda la ventana del navegador
 window.addEventListener('touchstart', function() {
   let audioInvitacion = document.getElementById("audioInvitacion");
-   
+
   setTimeout(function () { // se ejecuta la funcion una vez se carga la pagina, con un retraso definido
     audioInvitacion.play();
   },100); // el retraso definido en milisegundos
