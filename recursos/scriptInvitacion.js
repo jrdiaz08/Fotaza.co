@@ -134,11 +134,14 @@ fondoIntro.style.opacity = "1"; // muestra el contenido del documento
 
  // Escucha cualquier toque en toda la ventana del navegador
 window.addEventListener('touchstart', function() {
+  horaEnBerlin= new Date().toLocaleString("en-US", {timeZone: "Europe/Berlin"});
+  console.log("hora en Berlin= ",horaEnBerlin); 
+  
   let audioInvitacion = document.getElementById("audioInvitacion");
 
   setTimeout(function () { // se ejecuta la funcion una vez se carga la pagina, con un retraso definido
     audioInvitacion.play();
-  },100); // el retraso definido en milisegundos
+  },200); // el retraso definido en milisegundos
 });
 
  window.onresize = function() {
