@@ -71,7 +71,7 @@ fondoIntro.style.opacity = "1"; // muestra el contenido del documento
  let arranque = Date.now(); // recordar la hora de inicio
   let cronometro = setInterval(function() {
     let tiempo = Date.now() - arranque; // ¿Cuánto tiempo pasó desde el principio?
-    if (tiempo >= 3000) {
+    if (tiempo >= 4000) {
       clearInterval(cronometro); // terminar la animación después de 2 segundos
       return;
     }
@@ -82,8 +82,8 @@ fondoIntro.style.opacity = "1"; // muestra el contenido del documento
   // mientras timePassed va de 0 a 2000
   // Opacity obtiene valores de 1 a 0
   function animacion(tiempo) { 
-    if (200<=tiempo && tiempo<=2200) {
-     VJ1.style.opacity = (tiempo-200)/2000; // en la seccion "fondoInvitacion" se altera la propiedad css width  
+    if (400<=tiempo && tiempo<=2500) {
+     VJ1.style.opacity = (tiempo-400)/2100; // en la seccion "fondoInvitacion" se altera la propiedad css width  
     } 
     if (500<=tiempo && tiempo<=3000) {
       VJ3.style.opacity = (tiempo-500)/2500; // en la seccion "fondoInvitacion" se altera la propiedad css width
@@ -94,8 +94,8 @@ fondoIntro.style.opacity = "1"; // muestra el contenido del documento
     if (1200<=tiempo && tiempo<=2800) {
       VJ2.style.opacity = (tiempo-1200)/1600; // en la seccion "fondoInvitacion" se altera la propiedad css width
     } 
-    if (500<=tiempo && tiempo<=3000) {
-      anillos0.style.opacity = (tiempo-500)/2500; // en la seccion "fondoInvitacion" se altera la propiedad css width
+    if (2500<=tiempo && tiempo<=4000) {
+      anillos0.style.opacity = (tiempo-2500)/1500; // en la seccion "fondoInvitacion" se altera la propiedad css width
     } 
   }
 
@@ -189,7 +189,7 @@ function clickAnillo0() {
    document.getElementById("fondoIntro").style.display = "none";
    abrirInvitacion();
 
- },2500); // el retraso definido en milisegundos
+ },2200); // el retraso definido en milisegundos
 }
 
 function abrirInvitacion(){
