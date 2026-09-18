@@ -27,6 +27,7 @@ document.body.onload = function inicio() {
   console.log("invitado= ",inv);
   console.log("cupo= ",qpo);
   
+  
   let marcoInvitacion = document.getElementById("marcoInvitacion");
   let esqSupInvitacion = document.getElementById("esqSupInvitacion");
   let nombreNovios= document.getElementById("nombreNovios");
@@ -49,6 +50,7 @@ document.body.onload = function inicio() {
   detallesCupo2.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
   anillos.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
   click.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
+  click.style.scale = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
   esqInfInvitacion.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
   masDetalles.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
   
@@ -126,7 +128,15 @@ fondoIntro.style.opacity = "1"; // muestra el contenido del documento
 
  };
 
- 
+ // Escucha cualquier toque en toda la ventana del navegador
+window.addEventListener('touchstart', function() {
+  let audioInvitacion = document.getElementById("audioInvitacion");
+   
+  setTimeout(function () { // se ejecuta la funcion una vez se carga la pagina, con un retraso definido
+    audioInvitacion.play();
+  },100); // el retraso definido en milisegundos
+});
+
  window.onresize = function() {
   var alto = window.innerHeight; 
   var ancho = window.innerWidth;
@@ -242,6 +252,7 @@ var masMenosDetalles = 1;
 function masDetallesClick() {
 
   if(masMenosDetalles == "1"){
+     click.style.scale = "1"; // en la seccion "fondoInvitacion" se altera la propiedad css width
     let arranque = Date.now(); // recordar la hora de inicio
     let cronometro = setInterval(function() {
     let tiempo = Date.now() - arranque; // ¿Cuánto tiempo pasó desde el principio?
@@ -269,6 +280,7 @@ function masDetallesClick() {
    masMenosDetalles = "0";
   }
   else{
+     click.style.scale = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
     let arranque = Date.now(); // recordar la hora de inicio
     let cronometro = setInterval(function() {
     let tiempo = Date.now() - arranque; // ¿Cuánto tiempo pasó desde el principio?
