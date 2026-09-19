@@ -100,8 +100,8 @@ fondoIntro.style.opacity = "1"; // muestra el contenido del documento
       VJ2.style.opacity = (tiempo-1200)/1600; // en la seccion "fondoInvitacion" se altera la propiedad css width
       VJ2.style.rotate =  (-1*(tiempo-1200)/533) + "deg"; // en la seccion "fondoInvitacion" se altera la propiedad css width
     } 
-    if (2500<=tiempo && tiempo<=4000) {
-      anillos0.style.opacity = (tiempo-2500)/1500; // en la seccion "fondoInvitacion" se altera la propiedad css width
+    if (2900<=tiempo && tiempo<=4000) {
+      anillos0.style.opacity = (tiempo-2900)/1100; // en la seccion "fondoInvitacion" se altera la propiedad css width
     } 
   }
 
