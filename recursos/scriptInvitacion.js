@@ -35,6 +35,8 @@ document.body.onload = function inicio() {
   let nombreInvitado= document.getElementById("nombreInvitado");
   let detallesCupo1 = document.getElementById("detallesCupo1");
   let detallesCupo2 = document.getElementById("detallesCupo2");
+  let detallesCupo3 = document.getElementById("detallesCupo3");
+  let detallesCupo4 = document.getElementById("detallesCupo4");
   let click = document.getElementById("click");
   let anillos = document.getElementById("anillos");   
   let esqInfInvitacion = document.getElementById("esqInfInvitacion");
@@ -48,6 +50,8 @@ document.body.onload = function inicio() {
   palabrasDeInvitacion.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
   detallesCupo1.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
   detallesCupo2.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
+  detallesCupo3.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
+  detallesCupo4.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
   anillos.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
   click.style.opacity = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
   click.style.scale = "0"; // en la seccion "fondoInvitacion" se altera la propiedad css width
@@ -115,13 +119,19 @@ fondoIntro.style.opacity = "1"; // muestra el contenido del documento
   
   
 
-   if (qpo=="s"){
-    detallesCupo= document.getElementById("detallesCupo1");
+   if (qpo=="1"){
+    detallesCupo= document.getElementById("detallesCupo1"); 
   }
-  if (qpo=="p"){
+  if (qpo=="2"){
     detallesCupo= document.getElementById("detallesCupo2");
   }
-  
+  if (qpo=="3"){
+    detallesCupo= document.getElementById("detallesCupo3");
+  }
+  if (qpo=="4"){
+    detallesCupo= document.getElementById("detallesCupo4");
+  }
+
   if (alto>ancho){ // condicional que se cumple si...
     document.getElementById('orientacion').style.transform="scale(0)";
         
