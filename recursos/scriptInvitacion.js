@@ -151,7 +151,13 @@ window.addEventListener('touchstart', function() {
 
   setTimeout(function () { // se ejecuta la funcion una vez se carga la pagina, con un retraso definido
     audioInvitacion.play();
+    audioInvitacion.volume = 0.5
   },200); // el retraso definido en milisegundos
+});
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "hidden") {
+    audioInvitacion.pause();
+  }
 });
 
  window.onresize = function() {

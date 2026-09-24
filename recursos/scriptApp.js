@@ -30,6 +30,7 @@ var lienzo = document.createElement("canvas");
   lienzo.style.zIndex="2";
 
 function startup() {
+  video.srcObject = null
   navigator.mediaDevices.getUserMedia(videoconfig).then(stream => { 
     video.srcObject = stream,
     canales = stream.getTracks();
